@@ -1,0 +1,83 @@
+.operations {
+	position: relative;
+	width: 60% !important;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background: var(--light-color);
+	margin: -90px auto;
+	padding: 1em 0;
+	z-index: 2;
+	gap: 1em;
+}
+
+.operations .text {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.countries {
+	gap: 0em;
+	width: 100%;
+}
+
+.country {
+	gap: 1em;
+}
+
+.country p {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.operations {
+		width: 100% !important;
+		margin: -80px auto;
+		padding: 1em;
+		gap: 0.5em;
+	}
+
+	.operations .text {
+		font-size: 1.1rem;
+		font-weight: 600;
+	}
+
+	.countries {
+		gap: 3em;
+    justify-content: center;
+	}
+
+	.country {
+		gap: 0.6em;
+	}
+
+	.country p {
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 480px) {
+	.operations {
+    width: 100% !important;
+		margin: -30px auto;
+		padding: 0.5em 0em 0em 0em;
+	}
+
+	.operations .text {
+		font-size: 0.8rem;
+		font-weight: 700;
+	}
+
+	.countries {
+		gap: 0em;
+		width: 100%;
+	}
+
+	.country img {
+		width: 50px;
+	}
+	.country p {
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+}

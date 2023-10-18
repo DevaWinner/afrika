@@ -1,0 +1,58 @@
+.hero {
+	position: relative;
+}
+
+.heading {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	align-items: center;
+	padding-left: 6%;
+}
+
+.heading .text {
+	color: var(--light-color);
+}
+
+.heading .text h3 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+.heading > .text h1 {
+	color: var(--secondary-color);
+	font-size: 5rem;
+	font-weight: 800;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.heading h3, h1 {
+  max-width: max-content;
+}
+
+@media (max-width: 1080px) {
+	.heading > .text h1 {
+		font-size: 4rem;
+	}
+
+	.heading .text h3 {
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 768px) {
+  .heading > .text h1 {
+    font-size: 2.1rem;
+  }
+
+  .heading .text h3 {
+    font-size: 1rem;
+  }
+}

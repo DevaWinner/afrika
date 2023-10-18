@@ -1,0 +1,26 @@
+[
+	{
+		"country": "Ghana",
+		"flagPath": "/assets/flags/ghana.svg"
+	},
+	{
+		"country": "Nigeria",
+		"flagPath": "/assets/flags/nigeria.svg"
+	},
+	{
+		"country": "Liberia",
+		"flagPath": "/assets/flags/liberia.svg"
+	},
+	{
+		"country": "Sierra Leone",
+		"flagPath": "/assets/flags/sierra-leone.svg"
+	},
+	{
+		"country": "Togo",
+		"flagPath": "/assets/flags/togo.svg"
+	},
+	{
+		"country": "Cameroon",
+		"flagPath": "/assets/flags/cameroon.svg"
+	}
+]

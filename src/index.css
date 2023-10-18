@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #1a2238;
+	--secondary-color: #f4db7d;
+	--button-color: #009933;
+	--button-hover-color: #014518;
+	--light-color: #fff;
+	--title-color: #3d58db;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--primary-color);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top {
+	margin-top: 10em;
+}
