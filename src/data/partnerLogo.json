@@ -1,0 +1,22 @@
+[
+	{
+		"partnerName": "Lgo 1",
+		"partnerLogo": "/assets/partners/1.png"
+	},
+	{
+		"partnerName": "Lgo 2",
+		"partnerLogo": "/assets/partners/2.png"
+	},
+	{
+		"partnerName": "Lgo 3",
+		"partnerLogo": "/assets/partners/3.png"
+	},
+	{
+		"partnerName": "Lgo 4",
+		"partnerLogo": "/assets/partners/4.png"
+	},
+	{
+		"partnerName": "Lgo 5",
+		"partnerLogo": "/assets/partners/5.png"
+	}
+]
