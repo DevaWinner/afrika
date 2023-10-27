@@ -58,7 +58,7 @@ const NavBar = () => {
 										activeClassName="active"
 										onClick={closeNavbar}
 									>
-										About us
+										About Us
 									</NavLink>
 									<NavLink
 										to="/initiative"
@@ -74,7 +74,7 @@ const NavBar = () => {
 										activeClassName="active"
 										onClick={closeNavbar}
 									>
-										Get involved
+										Get Involved
 									</NavLink>
 								</Nav>
 								<div className="donate">
