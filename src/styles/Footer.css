@@ -1,0 +1,184 @@
+.footer {
+	color: var(--light-color);
+	padding: 1rem;
+	background-color: var(--primary-color);
+}
+
+.inclusion {
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--light-color);
+}
+
+.footer-details {
+	gap: 5em;
+}
+
+.footer-contact {
+	gap: 0.5em;
+	margin-top: 3%;
+	align-items: flex-start;
+	justify-content: start;
+	font-size: 0.8rem;
+}
+
+.footer-heading {
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: var(--light-color);
+}
+
+.footer-contact ul {
+	gap: 0.2em;
+	padding-left: 0;
+}
+
+.footer-contact ul li {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
+
+.footer-contact ul li i {
+	font-size: 1rem;
+}
+
+.socials {
+	gap: 1em;
+	margin-top: 3%;
+}
+
+.socials ul {
+	gap: 1.4em;
+	align-self: flex-end;
+}
+
+.socials ul li {
+	list-style: none;
+}
+
+.socials ul li i {
+	font-size: 1.5rem;
+	color: var(--light-color);
+}
+
+.newsletter {
+	gap: 1em;
+}
+
+.newsletter p {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.subscribe {
+	display: flex;
+	gap: 0;
+}
+
+.subscribe-input {
+	border-radius: 5px 0 0 5px;
+	border: 2px solid rgba(26, 34, 56, 0.15);
+	padding: 0 7em 0 1em;
+	font-size: 0.6rem;
+}
+
+.subscribe-input:focus {
+	outline: none;
+}
+
+.subscribe-btn {
+	padding: 0.4em 0.8rem;
+	border: none;
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 0 5px 5px 0;
+}
+
+.developer {
+	border-top: 1px solid var(--light-color);
+	align-self: center;
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--light-color);
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+.developer a {
+	color: var(--button-color);
+}
+
+.developer-heart,
+.developer-name {
+	padding: 0 0.5em;
+}
+
+.developer-br {
+  display: none;
+}
+
+@media (max-width: 480px) {
+	.footer {
+		padding: 1rem;
+	}
+
+	.footer-details {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.inclusion {
+		font-size: 1.2rem;
+		font-weight: 700;
+	}
+
+	.footer-contact {
+		gap: 0.5em;
+	}
+
+	.footer-contact ul li {
+		gap: 0.8rem;
+	}
+
+	.footer-contact ul li i {
+		font-size: 0.8rem;
+	}
+
+	.socials ul {
+		gap: 1em;
+	}
+
+	.socials ul li i {
+		font-size: 1.4rem;
+	}
+
+	.newsletter {
+		gap: 0;
+	}
+
+	.newsletter p {
+		font-size: 0.8rem;
+	}
+
+	.subscribe-input {
+		padding: 0 5em 0 1em;
+	}
+
+	.subscribe-btn {
+		padding: 0.6em;
+		font-size: 0.9rem;
+	}
+
+	.developer {
+		font-size: 0.7rem;
+		text-align: center;
+	}
+
+  .developer-br {
+    display: block;
+  }
+}
