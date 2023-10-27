@@ -1,5 +1,11 @@
 .hero {
 	position: relative;
+	height: 72vh;
+}
+
+.hero > div {
+	width: 100%;
+	height: 100%;
 }
 
 .heading {
@@ -27,14 +33,14 @@
 
 .heading > .text h1 {
 	color: var(--secondary-color);
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: 800;
-	text-transform: capitalize;
 	text-align: left;
 }
 
-.heading h3, h1 {
-  max-width: max-content;
+.heading h3,
+h1 {
+	max-width: max-content;
 }
 
 @media (max-width: 1080px) {
@@ -48,11 +54,15 @@
 }
 
 @media (max-width: 768px) {
-  .heading > .text h1 {
-    font-size: 2.1rem;
-  }
+	.hero {
+		height: 40vh;
+	}
 
-  .heading .text h3 {
-    font-size: 1rem;
-  }
+	.heading > .text h1 {
+		font-size: 2.1rem;
+	}
+
+	.heading .text h3 {
+		font-size: 1.3rem;
+	}
 }
