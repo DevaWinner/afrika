@@ -2,6 +2,7 @@ import React from "react";
 import image1 from "/assets/carousel/1.jpg";
 import image2 from "/assets/carousel/2.jpg";
 import image3 from "/assets/carousel/3.jpg";
+import "../styles/Carousel.css";
 
 const HeroCarousel = () => {
 	return (
@@ -15,13 +16,7 @@ const HeroCarousel = () => {
 					<div className="carousel-item active">
 						<img
 							src={image1}
-							className="d-block w-100 h-100"
-							style={{
-								maxWidth: "100%",
-								maxHeight: "600px",
-								width: "100%",
-								height: "100%",
-							}}
+							className="d-block w-100 h-100 carousel-image"
 							alt="First slide"
 						/>
 					</div>
@@ -29,13 +24,7 @@ const HeroCarousel = () => {
 					<div className="carousel-item">
 						<img
 							src={image2}
-							className="d-block w-100 h-100"
-							style={{
-								maxWidth: "100%",
-								maxHeight: "600px",
-								width: "100%",
-								height: "100%",
-							}}
+							className="d-block w-100 h-100 carousel-image"
 							alt="Second slide"
 						/>
 					</div>
@@ -43,13 +32,7 @@ const HeroCarousel = () => {
 					<div className="carousel-item">
 						<img
 							src={image3}
-							className="d-block w-100 h-100"
-							style={{
-								maxWidth: "100%",
-								maxHeight: "600px",
-								width: "100%",
-								height: "100%",
-							}}
+							className="d-block w-100 h-100 carousel-image"
 							alt="Third slide"
 						/>
 					</div>
