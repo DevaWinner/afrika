@@ -6,7 +6,7 @@ import "../styles/ImpactSection.css";
 const ImpactSection = () => {
 	return (
 		<Container className="operations d-flex align-items-center flex-column">
-			<p className="text">We are making impacts in 6 African countries</p>
+			<p className="text">We are making impacts in 10 African countries</p>
 			<Row className="countries">
 				{flagsData.map((flag, index) => (
 					<Col key={index} xl={2} md={1} xs={4}>
@@ -15,7 +15,7 @@ const ImpactSection = () => {
 								src={flag.flagPath}
 								alt={`${flag.country} Flag`}
 								className="img-fluid"
-								style={{ maxWidth: "100%", height: "auto" }}
+								style={{ maxWidth: "60%", height: "auto" }}
 							/>
 							<p className="text-truncate">{flag.country}</p>
 						</div>
