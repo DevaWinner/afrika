@@ -21,10 +21,22 @@ body {
 	color: var(--primary-color);
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Montserrat", sans-serif;
 }
 
 .top {
-	margin-top: 10em;
+	margin-top: 3em;
+}
+
+@media (max-width: 480px) {
+	.top {
+		margin-top: 1em;
+	}
 }

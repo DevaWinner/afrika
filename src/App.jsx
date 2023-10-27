@@ -5,6 +5,8 @@ import Navbar from "./components/NavBar";
 import About from "./pages/About";
 import Initiative from "./pages/Initiative";
 import GetInvolved from "./pages/GetInvolved";
+import Footer from "./components/Footer";
+import "./App.css"
 
 function App() {
 	return (
@@ -16,6 +18,7 @@ function App() {
 				<Route path="/initiative" element={<Initiative />} />
 				<Route path="/getinvolved" element={<GetInvolved />} />
 			</Routes>
+      <Footer />
 		</>
 	);
 }

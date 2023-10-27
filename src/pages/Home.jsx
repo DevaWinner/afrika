@@ -1,5 +1,10 @@
 import HeroCarousel from "../components/Carousel";
 import ImpactSection from "../components/ImpactSection";
+import WhoWeAreSection from "../components/WhoWeAreSection";
+import WhatWeDo from "../components/WhatWeDo";
+import CtaBox from "../components/CtaBox";
+import ContactForm from "../components/ContactForm";
+import PartnerSection from "../components/PartnerSection";
 import "../styles/Home.css";
 
 function Home() {
@@ -10,18 +15,21 @@ function Home() {
 
 				<div className="overlay heading">
 					<div className="text">
-						<h3>Join the Change:</h3>
 						<h1>
-							Impacting
+							Become a
 							<br />
-							Africans, <br />
-							Uplifting Africa.
+							Catalyst for <br />
+							Growth in Africa
 						</h1>
 					</div>
 				</div>
 			</section>
 			<ImpactSection />
-			<h1>Home Page</h1>
+			<WhoWeAreSection />
+			<WhatWeDo />
+			<CtaBox />
+			<ContactForm />
+			<PartnerSection />
 		</main>
 	);
 }
