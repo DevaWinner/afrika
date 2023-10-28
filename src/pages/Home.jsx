@@ -1,5 +1,5 @@
 import HeroCarousel from "../components/Carousel";
-import ImpactSection from "../components/ImpactSection";
+import Reach from "../components/Reach";
 import WhoWeAreSection from "../components/WhoWeAreSection";
 import WhatWeDo from "../components/WhatWeDo";
 import CtaBox from "../components/CtaBox";
@@ -24,7 +24,7 @@ function Home() {
 					</div>
 				</div>
 			</section>
-			<ImpactSection />
+			<Reach />
 			<WhoWeAreSection />
 			<WhatWeDo />
 			<CtaBox />

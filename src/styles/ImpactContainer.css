@@ -1,0 +1,86 @@
+.impact-item {
+	gap: 1rem;
+	justify-content: center;
+}
+
+p.impact-texts {
+	font-weight: 400;
+	font-size: 0.9rem;
+}
+
+.item-1 svg,
+.item-2 svg,
+.item-3 svg,
+.item-4 svg {
+	width: 142px;
+	height: 121px;
+}
+
+.item-1 svg {
+	background: url(../illustration/people.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80px;
+}
+
+.item-2 svg {
+	background: url(../illustration/hands.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80px;
+}
+
+.item-3 svg {
+	background: url(../illustration/earth.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60px;
+}
+
+.item-4 svg {
+	background: url(../illustration/microscope.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50px;
+}
+
+.impact-texts {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+@media (max-width: 480px) {
+	.impact-item {
+		gap: 0.5rem;
+    margin-bottom: 0.8rem;
+	}
+
+	p.impact-texts {
+		font-size: 0.8rem;
+	}
+
+	.item-1 svg,
+	.item-2 svg,
+	.item-3 svg,
+	.item-4 svg {
+		width: 112px;
+		height: 101px;
+	}
+
+	.item-1 svg {
+		background-size: 70px;
+	}
+
+	.item-2 svg {
+		background-size: 65px;
+	}
+
+	.item-3 svg {
+		background-size: 50px;
+	}
+
+	.item-4 svg {
+		background-size: 43px;
+	}
+}

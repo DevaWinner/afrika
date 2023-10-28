@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flagsData from "../data/FlagsData.json";
-import "../styles/ImpactSection.css";
+import "../styles/Reach.css";
 
-const ImpactSection = () => {
+const Reach = () => {
 	return (
 		<Container className="operations d-flex align-items-center flex-column">
 			<p className="text">We are making impacts in 10 African countries</p>
@@ -26,4 +26,4 @@ const ImpactSection = () => {
 	);
 };
 
-export default ImpactSection;
+export default Reach;
