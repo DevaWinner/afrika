@@ -13,8 +13,8 @@ const ImpactContainer = () => {
 							<hr className="bg-primary" />
 						</div>
 						<p>
-							Our commitment meets impact, and where every action makes a
-							difference in the lives of African young adults.
+							Our commitment equals impact. Every action makes a difference in
+							the lives of African young adults
 						</p>
 					</div>
 				</Row>
@@ -40,8 +40,8 @@ const ImpactContainer = () => {
 							</svg>
 						</div>
 						<p className="impact-texts">
-							Operating in <br />
-							13 communities
+							2,000 lives <br />
+							impacted
 						</p>
 					</Col>
 					<Col
@@ -65,8 +65,8 @@ const ImpactContainer = () => {
 							</svg>
 						</div>
 						<p className="impact-texts">
-							Over <br />
-							50+ beneficiaries
+							$50,000 in <br />
+							micro loans made
 						</p>
 					</Col>
 					<Col
@@ -90,8 +90,8 @@ const ImpactContainer = () => {
 							</svg>
 						</div>
 						<p className="impact-texts">
-							Active in 6 <br />
-							African countries
+							Activities in <br />
+							10 countries
 						</p>
 					</Col>
 					<Col
@@ -116,7 +116,8 @@ const ImpactContainer = () => {
 							</svg>
 						</div>
 						<p className="impact-texts">
-							Associated with <br />6 organizations
+							$36,000 in <br />
+							educational assistance  
 						</p>
 					</Col>
 				</Row>
