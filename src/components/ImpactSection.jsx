@@ -10,7 +10,7 @@ const ImpactSection = () => {
 			<Row className="countries">
 				{flagsData.map((flag, index) => (
 					<Col key={index} xl={2} md={1} xs={4}>
-						<div className="country  d-flex align-items-center flex-column">
+						<div className="country d-flex align-items-center flex-column">
 							<img
 								src={flag.flagPath}
 								alt={`${flag.country} Flag`}

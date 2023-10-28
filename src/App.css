@@ -13,8 +13,8 @@
 }
 
 .title h2 {
-	font-size: 1.4rem;
-	font-weight: 600;
+	font-size: 1.1rem;
+	font-weight: 700;
 }
 
 .title hr {
@@ -28,8 +28,8 @@
 
 .text p {
 	max-width: 70%;
-	font-size: 1rem;
-	font-weight: 500;
+	font-size: 0.9rem;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -57,9 +57,13 @@
 }
 
 @media (max-width: 480px) {
+	.title h2 {
+		font-size: 1rem;
+	}
+
 	.text p {
 		max-width: 90%;
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 
 	.button {

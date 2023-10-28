@@ -65,7 +65,7 @@ const ContactForm = () => {
 									<textarea
 										name="message"
 										id="message"
-										rows="6"
+										rows="4"
 										placeholder="Send us a message"
 										className="form-control"
 									></textarea>

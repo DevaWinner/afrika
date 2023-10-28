@@ -28,7 +28,7 @@ const WhoWeAreSection = () => {
 					</div>
 					<div className="vertical-line"></div>
 					<div className="description text-justify d-flex">
-						<h3 className="fw-bold">Our Mission</h3>
+						<h3>Our Mission</h3>
 						<p>
 							We facilitate inclusion and self-reliance, empowering individuals
 							to thrive. Through sustainable programs, we break down barriers,
@@ -39,7 +39,7 @@ const WhoWeAreSection = () => {
 				</div>
 				<div className="vision d-flex">
 					<div className="description text-justify d-flex">
-						<h3 className="fw-bold">Our Vision</h3>
+						<h3>Our Vision</h3>
 						<p>
 							We empower lives by providing micro-loans and sponsoring
 							educational activities. By blending financial support with

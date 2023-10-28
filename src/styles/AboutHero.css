@@ -28,11 +28,11 @@
 
 .about-hero-text h1 {
 	font-size: 1rem;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .about-hero-text p {
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	line-height: 1.7;
 	text-align: justify;
 	margin-bottom: 0;
@@ -48,6 +48,7 @@ div.about-quote {
 blockquote {
 	font-size: 1rem;
 	font-weight: 500;
+	margin: 0;
 }
 
 .about-quote p {

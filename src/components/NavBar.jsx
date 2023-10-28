@@ -20,7 +20,7 @@ const NavBar = () => {
 			{["lg"].map((expand) => (
 				<Navbar key={expand} expand={expand} className="bg-white">
 					<Container className="header">
-						<Navbar.Brand href="#" style={{ width: "220px", height: "auto" }}>
+						<Navbar.Brand href="#" className="logo">
 							<img
 								src={logo}
 								className="img-fluid"
@@ -78,7 +78,7 @@ const NavBar = () => {
 									</NavLink>
 								</Nav>
 								<div className="donate">
-									<Button variant="secondary" className="mobile-button justify">
+									<Button variant="secondary" className="mobile-button">
 										Donate
 									</Button>
 								</div>

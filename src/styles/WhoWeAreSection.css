@@ -56,16 +56,17 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.5rem;
 }
 
 .description h3 {
-	font-size: 1.1rem;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
 .description p {
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: justify;
 }
 
@@ -81,13 +82,13 @@
 
 @media (max-width: 480px) {
 	.who-we-are {
-		margin-top: 4.5em;
+		margin-top: 4em;
 	}
 
 	.mission {
 		flex-direction: column;
-		gap: 2rem;
-		margin-top: 1.5rem;
+		gap: 1rem;
+		margin-top: 0em;
 	}
 
 	.img {
@@ -105,8 +106,21 @@
 		gap: 1rem;
 	}
 
+	.description h3 {
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	.description p {
+		font-size: 0.8rem;
+	}
+
 	.vision {
 		flex-direction: column-reverse;
-		gap: 2rem;
+		gap: 1rem;
+	}
+
+	.intro .vision {
+		margin-top: 2rem;
 	}
 }

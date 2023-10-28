@@ -22,12 +22,12 @@ h5.card-title {
 	color: var(--secondary-color);
 	font-weight: bold;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 .card-text {
 	color: var(--light-color);
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	text-align: justify;
 	line-height: 1.7;
 }

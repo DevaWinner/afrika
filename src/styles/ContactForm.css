@@ -21,6 +21,11 @@ div.form {
 	align-self: center;
 }
 
+label {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
 .form-fill button:hover {
 	background-color: #014518;
 	color: var(--light-color);
@@ -49,6 +54,7 @@ div.address h3 {
 div.address p {
 	font-weight: 400;
 	font-size: 0.9rem;
+	text-align: justify;
 }
 
 .address-items {
@@ -68,6 +74,7 @@ div.address p {
 
 .address-items li p {
 	text-align: center;
+	font-size: 0.8rem;
 }
 
 .address-items li i {
@@ -75,8 +82,9 @@ div.address p {
 }
 
 @media (max-width: 480px) {
-	.contact-container {
+	section.contact-container {
 		max-width: 90%;
+		margin-top: 2em;
 	}
 
 	.form div.text p {
@@ -92,6 +100,11 @@ div.address p {
 		width: 100%;
 	}
 
+	label {
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
 	.agreement {
 		margin-top: 1rem;
 		font-size: 0.7rem;
@@ -105,6 +118,6 @@ div.address p {
 
 	div.address p {
 		font-weight: 400;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 }

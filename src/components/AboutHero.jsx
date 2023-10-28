@@ -1,4 +1,4 @@
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "../styles/AboutHero.css";
 
 const AboutHero = () => {
@@ -20,7 +20,7 @@ const AboutHero = () => {
 			</section>
 			<Container>
 				<div className="about-quote d-flex flex-column container">
-					<blockquote>
+					<blockquote className="mb-2">
 						“Inclusion is the act of including someone or something as part of a
 						group...”
 					</blockquote>

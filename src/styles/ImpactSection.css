@@ -11,7 +11,7 @@
 }
 
 .operations .text {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: 600;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .country {
-	gap: 1em;
+	gap: 0.7em;
 }
 
 .country p {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 600;
 	margin-bottom: 0;
 }
@@ -39,7 +39,7 @@
 	}
 
 	.operations .text {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 		font-weight: 600;
 	}
 
@@ -64,7 +64,7 @@
 	}
 
 	.operations .text {
-		font-size: 1rem;
+		font-size: 0.9rem;
 		font-weight: 600;
 		text-align: center;
 	}
@@ -74,11 +74,16 @@
 		width: 100%;
 	}
 
+  	.country {
+		gap: 0.3em;
+	}
+
 	.country img {
 		width: 50px;
 	}
+
 	.country p {
-		font-size: 0.7rem;
+		font-size: 0.6rem;
 		font-weight: 700;
 	}
 }
