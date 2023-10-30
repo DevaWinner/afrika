@@ -56,21 +56,10 @@ const AboutStory = () => {
 						<p className="story-title">Our Initiatives</p>
 						<div className="story-line"></div>
 						<p className="story-text">
-							Inclusion Afrika was born to create self-reliance opportunities.
-							We provide micro loans that spark the entrepreneurial spirit,
-							educational growth activities that prepare young adults for remote
-							work opportunities, and mentorship and support to guide dreams to
-							reality.
-						</p>
-					</Col>
-					<Col className="story d-flex align-items-center">
-						<p className="story-title">Impact</p>
-						<div className="story-line"></div>
-						<p className="story-text">
-							Prior to our incorporation, we've made $48,000 in loans to
-							borrowers across six African countries, supporting diverse
-							ventures. We've collaborated with partners, hosted workshops, and
-							created positive change in communities.
+							Inclusion Afrika was created to facilitate self-reliance
+							opportunities for those born with so little, but so determined to
+							succeed. We believe microloans fuel the entrepreneurial spirit and
+							target educational grants are answers to hard work and prayer.
 						</p>
 					</Col>
 				</Row>

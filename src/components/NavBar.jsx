@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import DonateButton from "./DonateButton";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import logo from "/assets/inclusion.gif";
@@ -36,10 +37,13 @@ const NavBar = () => {
 							aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
 							placement="end"
 							style={{
-								backgroundColor: "rgba(255, 255, 255, 0.1)",
+								backgroundColor: "var(--primary-color)",
 								width: "80%",
+								height: "90%",
 								backdropFilter: "blur(20px)",
-								color: "white",
+								color: "yellow",
+								borderRadius: "0 0 0 20px",
+								border: "none",
 							}}
 						>
 							<Offcanvas.Body>
@@ -78,9 +82,7 @@ const NavBar = () => {
 									</NavLink>
 								</Nav>
 								<div className="donate">
-									<Button variant="secondary" className="mobile-button">
-										Donate
-									</Button>
+									<DonateButton />
 								</div>
 							</Offcanvas.Body>
 						</Navbar.Offcanvas>

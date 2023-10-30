@@ -1,0 +1,102 @@
+.founders{
+  gap: 1rem;
+}
+
+.founder-item {
+	gap: 0.7rem;
+	background-color: var(--primary-color);
+	border-radius: 15px;
+	padding: 0.8rem 0;
+	color: var(--light-color);
+}
+
+div.founder-img {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+}
+
+div.founder-img img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
+.founder-description {
+	width: 70%;
+}
+
+.founder-description > p {
+	text-align: justify;
+	font-size: 0.85rem;
+	line-height: 1.8;
+}
+
+.founder-name {
+	align-self: flex-end;
+}
+
+.founder-name h1 {
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.founder-name p {
+	font-size: 0.7rem;
+	font-style: italic;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  section.founder-container {
+    width: 100%;
+  }
+	.founder-item {
+		gap: 0.7rem;
+		padding: 0.8rem;
+		flex-direction: column;
+	}
+
+	.founder-item.item-2 {
+		flex-direction: column-reverse;
+	}
+
+	div.founder-img {
+		width: 100%;
+	}
+
+	div.founder-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 15px;
+	}
+
+	.founder-description {
+		width: 100%;
+	}
+
+	.founder-description > p {
+		text-align: justify;
+		font-size: 0.8rem;
+		line-height: 1.8;
+	}
+
+	.founder-name {
+		align-self: flex-end;
+	}
+
+	.founder-name h1 {
+		font-size: 1rem;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+
+	.founder-name p {
+		font-size: 0.7rem;
+		font-style: italic;
+		font-weight: 500;
+		text-transform: capitalize;
+	}
+}

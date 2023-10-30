@@ -1,3 +1,4 @@
+import DonateButton from "./DonateButton";
 import "../styles/CtaBox.css";
 
 const CtaBox = () => {
@@ -9,7 +10,9 @@ const CtaBox = () => {
 					Support us on this empowering journey and be part of the change.
 				</p>
 				<div className="button-container d-flex">
-					<button className="button">Donate</button>
+					<div>
+						<DonateButton />
+					</div>
 					<button className="mentor-btn">Get involved</button>
 				</div>
 			</div>

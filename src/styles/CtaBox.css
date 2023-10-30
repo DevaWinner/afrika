@@ -28,7 +28,7 @@ section.cta-box {
 	border: 2px solid var(--light-color);
 	background-color: transparent;
 	color: var(--light-color);
-  font-size: 0.8rem;
+	font-size: 0.8rem;
 	font-weight: 700;
 	cursor: pointer;
 	border-radius: 5px;
@@ -43,6 +43,15 @@ section.cta-box {
 
 .button-container {
 	gap: 1em;
+}
+
+.button-container div:first-child button {
+	background-color: var(--button-color);
+	border: none;
+	color: var(--light-color);
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
 }
 
 @media (max-width: 480px) {
