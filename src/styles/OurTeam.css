@@ -1,0 +1,54 @@
+.team-header {
+	height: 45vh;
+	position: relative;
+}
+
+.team-header img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-header .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.team-header .overlay .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: 600;
+}
+
+.founder-member img,
+.board-member img,
+.tech-member img {
+	width: 200px;
+	max-height: 200px;
+  min-height: 200px;
+	object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+	.team-header {
+		height: 25vh;
+	}
+
+	.team-header img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.team-header .overlay .text {
+		font-size: 1.4rem;
+	}
+}

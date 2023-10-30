@@ -35,6 +35,7 @@ const DonateButton = () => {
 				onHide={handleModalClose}
 				centered
 				animation={true}
+				size="lg"
 			>
 				<Modal.Header closeButton>
 					<Modal.Title>Donate</Modal.Title>

@@ -9,7 +9,7 @@ import "../styles/Home.css";
 
 function Home() {
 	return (
-		<main>
+		<div style={{zIndex: 1}}>
 			<section className="hero">
 				<HeroCarousel />
 
@@ -30,7 +30,7 @@ function Home() {
 			<CtaBox />
 			<ContactForm />
 			<PartnerSection />
-		</main>
+		</div>
 	);
 }
 
