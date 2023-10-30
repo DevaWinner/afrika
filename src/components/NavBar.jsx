@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,21 +9,11 @@ import "../styles/NavBar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 const NavBar = () => {
-	const [dropdownOpen, setDropdownOpen] = useState(false);
-
 	const closeNavbar = () => {
 		const navbarToggler = document.querySelector(".navbar-toggler");
 		if (navbarToggler && window.innerWidth < 992) {
 			navbarToggler.click();
 		}
-	};
-
-	const handleDropdownEnter = () => {
-		setDropdownOpen(true);
-	};
-
-	const handleDropdownLeave = () => {
-		setDropdownOpen(false);
 	};
 
 	return (
@@ -75,10 +64,7 @@ const NavBar = () => {
 									<NavDropdown
 										title="About Us"
 										id="basic-nav-dropdown"
-										show={dropdownOpen}
 										className="nav-link"
-										onMouseEnter={handleDropdownEnter}
-										onMouseLeave={handleDropdownLeave}
 									>
 										<NavDropdown.Item
 											as={NavLink}

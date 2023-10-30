@@ -27,9 +27,11 @@ const ProfileCard = ({ type, name, intro, image, bio, linkedin }) => {
 				<h3 className="fs-5">{name}</h3>
 				<p className="fs-6">{intro}</p>
 				<div className="d-flex justify-content-center gap-2">
-					<a href={linkedin} target="_blank" rel="noopener noreferrer">
-						<i className="fab fa-linkedin fa-2x"></i>
-					</a>
+					{linkedin && (
+						<a href={linkedin} target="_blank" rel="noopener noreferrer">
+							<i className="fab fa-linkedin fa-2x"></i>
+						</a>
+					)}
 					<Button variant="link" onClick={handleModalShow}>
 						Read About {name.split(" ")[0]}
 					</Button>
