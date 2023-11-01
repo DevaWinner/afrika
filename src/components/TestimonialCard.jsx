@@ -8,7 +8,7 @@ const TestimonialCard = ({ text, author, image, country }) => {
 			</div>
 			<div className="testimonial-text">
 				<p>{text}</p>
-				<p className="testimonial-author">- {author}</p>
+				<p className="testimonial-author ">- {author}</p>
 				<p className="fs-6 text-country">{country}</p>
 			</div>
 		</div>
