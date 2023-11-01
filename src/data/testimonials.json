@@ -1,0 +1,38 @@
+[
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/winner.jpg",
+    "country": "Ghana"
+	},
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/rupper.jpeg",
+    "country": "Ghana"
+	},
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/bentum.jpeg",
+    "country": "Nigeria"
+	},
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/winner.jpg",
+    "country": "Cameroon"
+	},
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/rupper.jpeg",
+    "country": "Ghana"
+	},
+	{
+		"text": "This is an amazing testimonial. The product/service has truly made a difference in my life.",
+		"author": "John Doe",
+		"image": "/assets/bentum.jpeg",
+    "country": "Togo"
+	}
+]
