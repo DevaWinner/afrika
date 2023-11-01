@@ -1,0 +1,58 @@
+.text-justify {
+	text-align: justify;
+}
+
+div.program-card-img {
+	width: 35%;
+	height: 100%;
+	object-fit: cover;
+}
+
+div.program-areas {
+	margin-bottom: 4rem;
+}
+
+div.program-areas:last-child {
+  margin-bottom: 0;
+}
+
+div.program-areas:nth-child(odd) div.program-card {
+	flex-direction: row-reverse;
+}
+
+.program-button-container > button {
+	background-color: var(--button-color);
+	color: var(--light-color);
+	border: none;
+	font-weight: 600;
+}
+
+.program-button-container > button:hover {
+	background-color: var(--button-hover-color);
+}
+
+.program-button-container > a button {
+	background-color: var(--light-color);
+	color: var(--button-color);
+	border: 2px solid var(--button-color);
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+}
+
+.program-button-container > a button:hover {
+	background-color: var(--button-color);
+	color: var(--light-color);
+	border: 2px solid var(--button-color);
+}
+
+@media (max-width: 480px) {
+	div.program-card-img {
+		width: 100%;
+		height: 35%;
+		margin-bottom: 0;
+	}
+
+	div.program-areas:nth-child(odd) div.program-card {
+		flex-direction: column;
+	}
+}
