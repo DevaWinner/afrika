@@ -81,6 +81,15 @@ div.address p {
 	font-size: 1.2rem;
 }
 
+div.text-container {
+	background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+button.button {
+  padding: 0.7rem 1rem;
+}
+
 @media (max-width: 480px) {
 	section.contact-container {
 		max-width: 90%;

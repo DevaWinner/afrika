@@ -21,7 +21,7 @@ const Testimonial = () => {
 					Africa
 				</p>
 			</div>
-			<div className="d-flex flex-column flex-md-row gap-md-0 gap-4">
+			<div className="d-flex flex-column flex-md-row gap-md-0 gap-4 align-items-center">
 				{randomTestimonials.map((testimonial, index) => (
 					<TestimonialCard key={index} {...testimonial} />
 				))}

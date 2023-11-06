@@ -18,11 +18,10 @@ function Initiative() {
 			<section className="container top">
 				<div className="text d-flex">
 					<div className="title d-flex"></div>
-					<p>
-						Our initiatives are designed to make a tangible difference in the
-						lives of African youth. With a commitment to collaboration and
-						inclusion, we have crafted a diverse range of programs that address
-						these challenges head-on..
+					<p className="fs-5">
+						Our initiatives make differences in the
+						lives of African youth. We have crafted a diverse range of programs that address
+						these challenges.
 					</p>
 				</div>
 				<div className="text d-flex">

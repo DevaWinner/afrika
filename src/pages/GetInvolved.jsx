@@ -1,7 +1,33 @@
+import { Container, Button, Row, Col } from "react-bootstrap";
+import WhyHelpSection from "../components/WhyHelpSection";
+import CtaBox from "../components/CtaBox";
+import Testimonial from "../components/Testimonial";
+import OtherWaysToSupport from "../components/OtherWaysToSupport";
+
 function GetInvolved() {
 	return (
 		<>
-			<h1>Get Involved Page</h1>
+			<div className="team-header">
+				<img
+					src="/assets/hand-shake.jpg"
+					alt="medium-shot-happy-african-people"
+					className="img-fluid"
+				/>
+				<div className="overlay">
+					<h1 className="text">Get Involved</h1>
+				</div>
+			</div>
+			<div className="text d-flex">
+				<div className="title d-flex"></div>
+				<p className="mt-4 fs-5">
+					Young Adults in Africa needs what you have to offer! Your support can
+					help individuals climb out of poverty and become self-reliant.
+				</p>
+			</div>
+			<WhyHelpSection />
+			<CtaBox />
+			<OtherWaysToSupport />
+			<Testimonial />
 		</>
 	);
 }

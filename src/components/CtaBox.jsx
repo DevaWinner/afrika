@@ -1,4 +1,5 @@
 import DonateButton from "./DonateButton";
+import { Link } from "react-router-dom";
 import "../styles/CtaBox.css";
 
 const CtaBox = () => {
@@ -13,7 +14,9 @@ const CtaBox = () => {
 					<div>
 						<DonateButton />
 					</div>
-					<button className="mentor-btn">Get involved</button>
+					<Link to="/getinvolved">
+						<button className="mentor-btn">Get involved</button>
+					</Link>
 				</div>
 			</div>
 		</section>

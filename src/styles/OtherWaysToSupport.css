@@ -1,0 +1,18 @@
+.other-ways-section {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  color: var(--primary-color);
+}
+
+.support-form {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.support-form button {
+  margin-top: 15px;
+}
