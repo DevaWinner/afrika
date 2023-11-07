@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flagsData from "../data/FlagsData.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/Reach.css";
 
 const Reach = () => {
@@ -11,8 +12,9 @@ const Reach = () => {
 				{flagsData.map((flag, index) => (
 					<Col key={index} xl={2} md={1} xs={4}>
 						<div className="country d-flex align-items-center flex-column">
-							<img
+							<LazyLoadImage
 								src={flag.flagPath}
+								effect="blur"
 								alt={`${flag.country} Flag`}
 								className="img-fluid"
 								style={{ maxWidth: "60%", height: "auto" }}

@@ -1,5 +1,6 @@
 import { Col, Button, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import DonateButton from "./DonateButton";
 
 const ProgramCard = ({ title, imgSrc, description }) => {
@@ -7,7 +8,12 @@ const ProgramCard = ({ title, imgSrc, description }) => {
 		<Col md={12} className="program-areas">
 			<Row className="program-card d-flex align-items-center justify-content-center gap-4">
 				<Col xs={12} md={6} className="program-card-img">
-					<img src={imgSrc} alt={title} className="img-fluid rounded" />
+					<LazyLoadImage
+						src={imgSrc}
+            effect="blur"
+						alt={title}
+						className="img-fluid rounded"
+					/>
 				</Col>
 				<Col
 					xs={12}
