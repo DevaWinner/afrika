@@ -109,7 +109,7 @@
 }
 
 .developer a {
-	color: var(--button-color);
+	color: var(--secondary-color);
 }
 
 .developer-heart,

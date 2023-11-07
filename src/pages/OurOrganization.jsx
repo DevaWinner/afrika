@@ -1,3 +1,4 @@
+import Navbar from "../components/NavBar";
 import AboutHero from "../components/AboutHero";
 import ImpactContainer from "../components/ImpactContainer";
 import AboutStory from "../components/ AboutStory";
@@ -14,12 +15,13 @@ function About() {
 	};
 	return (
 		<>
+			<Navbar />
 			<AboutHero />
 			<ImpactContainer />
 			<AboutStory />
 			<PartnerSection />
 			<QuoteComponent {...quote} />
-      <CtaBox />
+			<CtaBox />
 		</>
 	);
 }

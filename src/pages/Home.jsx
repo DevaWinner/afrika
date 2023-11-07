@@ -1,3 +1,4 @@
+import Navbar from "../components/NavBar";
 import HeroCarousel from "../components/Carousel";
 import Reach from "../components/Reach";
 import WhoWeAreSection from "../components/WhoWeAreSection";
@@ -10,29 +11,32 @@ import "../styles/Home.css";
 
 function Home() {
 	return (
-		<div style={{zIndex: 1}}>
-			<section className="hero">
-				<HeroCarousel />
+		<>
+			<div style={{ zIndex: 1 }}>
+				<Navbar />
+				<section className="hero">
+					<HeroCarousel />
 
-				<div className="overlay heading">
-					<div className="text">
-						<h1>
-							Become a
-							<br />
-							Catalyst for <br />
-							Growth in Africa
-						</h1>
+					<div className="overlay heading">
+						<div className="text">
+							<h1>
+								Become a
+								<br />
+								Catalyst for <br />
+								Growth in Africa
+							</h1>
+						</div>
 					</div>
-				</div>
-			</section>
-			<Reach />
-			<WhoWeAreSection />
-			<WhatWeDo />
-			<CtaBox />
-			<ContactForm />
-			<PartnerSection />
-      <Testimonial />
-		</div>
+				</section>
+				<Reach />
+				<WhoWeAreSection />
+				<WhatWeDo />
+				<CtaBox />
+				<ContactForm />
+				<PartnerSection />
+				<Testimonial />
+			</div>
+		</>
 	);
 }
 

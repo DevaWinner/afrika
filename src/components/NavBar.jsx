@@ -4,11 +4,13 @@ import Navbar from "react-bootstrap/Navbar";
 import DonateButton from "./DonateButton";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
-import logo from "/assets/inclusion.gif";
 import "../styles/NavBar.css";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
+	const [scrolled, setScrolled] = useState(false);
+
 	const closeNavbar = () => {
 		const navbarToggler = document.querySelector(".navbar-toggler");
 		if (navbarToggler && window.innerWidth < 992) {
@@ -16,19 +18,33 @@ const NavBar = () => {
 		}
 	};
 
+	useEffect(() => {
+		const handleScroll = () => {
+			const isScrolled = window.scrollY > 0;
+			setScrolled(isScrolled);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<>
 			{["lg"].map((expand) => (
 				<Navbar
 					key={expand}
 					expand={expand}
-					className="bg-white"
+					className={`bg-white header ${scrolled ? "scrolled" : ""}`}
 					style={{ zIndex: 1001 }}
+					sticky="top"
 				>
 					<Container className="header">
 						<Navbar.Brand href="#" className="logo">
 							<img
-								src={logo}
+								src="/assets/inclusion.jpg"
 								className="img-fluid"
 								alt="Inclusion Afrika Logo"
 							/>

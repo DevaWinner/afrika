@@ -8,18 +8,25 @@ const SupportForm = () => {
 	};
 
 	return (
-		<Form
-			onSubmit={handleSubmit}
-			className="support-form d-flex flex-column"
-		>
+		<Form onSubmit={handleSubmit} className="support-form d-flex flex-column">
 			<Row className="mb-3">
 				<Col>
 					<label htmlFor="fname">First Name</label>
-					<input type="text" name="fname" id="fname" className="form-control" />
+					<input
+						type="text"
+						name="fname"
+						id="fname"
+						className="form-control p-2"
+					/>
 				</Col>
 				<Col>
 					<label htmlFor="lname">Last Name</label>
-					<input type="text" name="lname" id="lname" className="form-control" />
+					<input
+						type="text"
+						name="lname"
+						id="lname"
+						className="form-control p-2"
+					/>
 				</Col>
 			</Row>
 			<Row className="mb-3">
@@ -29,12 +36,17 @@ const SupportForm = () => {
 						type="email"
 						name="email"
 						id="email"
-						className="form-control"
+						className="form-control p-2"
 					/>
 				</Col>
 				<Col>
 					<label htmlFor="phone">Phone Number</label>
-					<input type="text" name="phone" id="phone" className="form-control" />
+					<input
+						type="text"
+						name="phone"
+						id="phone"
+						className="form-control p-2"
+					/>
 				</Col>
 			</Row>
 			<Row className="mb-3">
@@ -45,7 +57,7 @@ const SupportForm = () => {
 					<select
 						name="donationType"
 						id="donationType"
-						className="form-control"
+						className="form-control p-2"
 						required
 					>
 						<option value="">Select...</option>
@@ -64,7 +76,7 @@ const SupportForm = () => {
 						id="message"
 						rows="4"
 						placeholder="Enter your message"
-						className="form-control"
+						className="form-control p-2"
 						required
 					></textarea>
 				</Col>
@@ -85,7 +97,8 @@ const OtherWaysToSupport = () => {
 					<Col md={6} className="text-container p-5 rounded">
 						<h2 className="mb-3">Other Ways to Support</h2>
 						<p className="mb-4">
-							For larger donations or other kind of donations, please contact us directly by filling out the form below.
+							For larger donations or other kind of donations, please contact us
+							directly by filling out the form below.
 						</p>
 					</Col>
 					<Col md={6} className="bg-white p-4 rounded shadow">

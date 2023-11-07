@@ -1,10 +1,12 @@
 import ProgramAreas from "../components/ProgramAreas";
+import Navbar from "../components/NavBar";
 import CtaBox from "../components/CtaBox";
 import Testimonial from "../components/Testimonial";
 
 function Initiative() {
 	return (
 		<>
+			<Navbar />
 			<div className="team-header">
 				<img
 					src="/assets/medium-shot-happy-community.jpg"
@@ -19,9 +21,9 @@ function Initiative() {
 				<div className="text d-flex">
 					<div className="title d-flex"></div>
 					<p className="fs-5">
-						Our initiatives make differences in the
-						lives of African youth. We have crafted a diverse range of programs that address
-						these challenges.
+						Our initiatives make differences in the lives of African youth. We
+						have crafted a diverse range of programs that address these
+						challenges.
 					</p>
 				</div>
 				<div className="text d-flex">

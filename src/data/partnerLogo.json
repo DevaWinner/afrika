@@ -1,22 +1,18 @@
 [
 	{
 		"partnerName": "Lgo 1",
-		"partnerLogo": "/assets/partners/1.png"
+		"partnerLogo": "/assets/partners/Skep.png"
 	},
 	{
 		"partnerName": "Lgo 2",
-		"partnerLogo": "/assets/partners/2.png"
+		"partnerLogo": "/assets/partners/Agilix.svg"
 	},
 	{
 		"partnerName": "Lgo 3",
-		"partnerLogo": "/assets/partners/3.png"
+		"partnerLogo": "/assets/partners/BYUMS.webp"
 	},
 	{
 		"partnerName": "Lgo 4",
-		"partnerLogo": "/assets/partners/4.png"
-	},
-	{
-		"partnerName": "Lgo 5",
-		"partnerLogo": "/assets/partners/5.png"
+		"partnerLogo": "/assets/partners/HHH.webp"
 	}
 ]

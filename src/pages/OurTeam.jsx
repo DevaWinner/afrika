@@ -1,3 +1,4 @@
+import Navbar from "../components/NavBar";
 import ProfileSection from "../components/ProfileSection";
 import boardMembersData from "../data/boardMembersData.json";
 import foundersData from "../data/foundersData.json";
@@ -7,6 +8,7 @@ import "../styles/OurTeam.css";
 const OurTeam = () => {
 	return (
 		<>
+			<Navbar />
 			<div className="team-header">
 				<img
 					src="/assets/medium-shot-happy-african-people.jpg"

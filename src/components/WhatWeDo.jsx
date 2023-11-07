@@ -19,7 +19,7 @@ const WhatWeDo = () => {
 				<div className="card">
 					<img src="/assets/seller.jpg" className="card-img-top" alt="..." />
 					<div className="card-body">
-						<h5 className="card-title">Micro Loans</h5>
+						<h3 className="card-title">Micro Loans</h3>
 						<p className="card-text">
 							We provide micro loans to motivated individuals across Africa.
 							These loans spark entrepreneurial spirit, fuel local businesses,
@@ -31,7 +31,7 @@ const WhatWeDo = () => {
 				<div className="card">
 					<img src="/assets/students.jpg" className="card-img-top" alt="..." />
 					<div className="card-body">
-						<h5 className="card-title">Educational Growth</h5>
+						<h3 className="card-title">Educational Growth</h3>
 						<p className="card-text">
 							We facilitate workshops, learning centers, and scholarships that
 							accelerate skill development and job readiness among African
@@ -47,7 +47,7 @@ const WhatWeDo = () => {
 						alt="..."
 					/>
 					<div className="card-body">
-						<h5 className="card-title">Mentoring and Support</h5>
+						<h3 className="card-title">Mentoring and Support</h3>
 						<p className="card-text">
 							We are dedicated to helping loan recipients succeed. We work
 							closely with borrowers, offering guidance and assistance to ensure

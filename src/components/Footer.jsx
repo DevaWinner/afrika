@@ -15,7 +15,9 @@ const Footer = () => {
 						</li>
 						<li>
 							<i className="fa-solid fa-phone"></i>
-							<p>+1 234 567 890</p>
+							<p>
+								+1 (814) 619-5491 <br /> +233 24 716 8781
+							</p>
 						</li>
 						<li>
 							<i className="fa-solid fa-envelope"></i>
@@ -58,7 +60,8 @@ const Footer = () => {
 				<p>
 					Copyright
 					<script>document.write(new Date().getFullYear());</script>© Inclusion
-					Afrika. All rights reserved. <br className="developer-br"/> Designed and developed with
+					Afrika. All rights reserved. <br className="developer-br" /> Designed
+					and developed with
 					<i className="fa fa-heart developer-heart"></i> by
 					<a
 						href="https://www.linkedin.com/in/winnera/"

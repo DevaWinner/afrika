@@ -5,7 +5,7 @@ const AboutHero = () => {
 	return (
 		<>
 			<section className="about-hero">
-				<img src="/assets/about-hero-scaled.jpg" alt="" className="img-fluid" />
+				<img src="/assets/about-hero-scaled.jpg" alt="About Hero Image" className="img-fluid" />
 				<div className="about-hero-text">
 					<h1>About Inclusion Africa</h1>
 					<p>

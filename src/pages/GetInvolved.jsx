@@ -1,4 +1,4 @@
-import { Container, Button, Row, Col } from "react-bootstrap";
+import Navbar from "../components/NavBar";
 import WhyHelpSection from "../components/WhyHelpSection";
 import CtaBox from "../components/CtaBox";
 import Testimonial from "../components/Testimonial";
@@ -7,6 +7,7 @@ import OtherWaysToSupport from "../components/OtherWaysToSupport";
 function GetInvolved() {
 	return (
 		<>
+			<Navbar />
 			<div className="team-header">
 				<img
 					src="/assets/hand-shake.jpg"
