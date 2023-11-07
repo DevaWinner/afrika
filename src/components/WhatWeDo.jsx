@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/WhatWeDo.css";
 
 const WhatWeDo = () => {
@@ -17,7 +18,12 @@ const WhatWeDo = () => {
 
 			<div className="card-group d-flex container">
 				<div className="card">
-					<img src="/assets/seller.jpg" className="card-img-top" alt="..." />
+					<LazyLoadImage
+						src="/assets/seller.jpg"
+						effect="blur"
+						className="card-img-top"
+						alt="..."
+					/>
 					<div className="card-body">
 						<h3 className="card-title">Micro Loans</h3>
 						<p className="card-text">
@@ -29,7 +35,12 @@ const WhatWeDo = () => {
 					</div>
 				</div>
 				<div className="card">
-					<img src="/assets/students.jpg" className="card-img-top" alt="..." />
+					<LazyLoadImage
+						src="/assets/students.jpg"
+            effect="blur"
+						className="card-img-top"
+						alt="..."
+					/>
 					<div className="card-body">
 						<h3 className="card-title">Educational Growth</h3>
 						<p className="card-text">
@@ -41,8 +52,9 @@ const WhatWeDo = () => {
 					</div>
 				</div>
 				<div className="card">
-					<img
+					<LazyLoadImage
 						src="/assets/hand-shake.jpg"
+            effect="blur"
 						className="card-img-top"
 						alt="..."
 					/>
