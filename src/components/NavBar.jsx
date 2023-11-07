@@ -86,7 +86,7 @@ const NavBar = () => {
 									>
 										<NavDropdown.Item
 											as={NavLink}
-											to="/about/organization"
+											to="/organization"
 											activeClassName="active"
 											onClick={closeNavbar}
 										>
@@ -94,7 +94,7 @@ const NavBar = () => {
 										</NavDropdown.Item>
 										<NavDropdown.Item
 											as={NavLink}
-											to="/about/team"
+											to="/team"
 											activeClassName="active"
 											onClick={closeNavbar}
 										>
