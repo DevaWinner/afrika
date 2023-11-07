@@ -10,7 +10,6 @@ const ContactForm = () => {
 		email: "",
 		phone: "",
 		message: "",
-		_gotcha: "",
 	});
 
 	const [showToast, setShowToast] = useState(false);
@@ -21,23 +20,21 @@ const ContactForm = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (formData._gotcha) return;
 		axios({
 			method: "POST",
-			url: "https://formsubmit.co/el/mikafa",
+			url: "https://usebasin.com/f/588bb7afd7a4",
 			headers: { "Content-Type": "application/json" },
 			data: formData,
 		})
 			.then((response) => {
 				console.log("Form submitted successfully", response);
-				setShowToast(true);
+				setShowToast(true); // Show the toast
 				setFormData({
 					fname: "",
 					lname: "",
 					email: "",
 					phone: "",
 					message: "",
-					_gotcha: "",
 				});
 			})
 			.catch((error) => {
@@ -78,14 +75,6 @@ const ContactForm = () => {
 								className="form-fill d-flex flex-column"
 								onSubmit={handleSubmit}
 							>
-								<input type="hidden" name="_captcha" value="" />
-								<input
-									type="text"
-									name="_gotcha"
-									value={formData._gotcha}
-									onChange={handleChange}
-									style={{ display: "none" }}
-								/>
 								<Row className="mb-3">
 									<Col>
 										<label htmlFor="fname">First Name</label>
@@ -148,7 +137,6 @@ const ContactForm = () => {
 										></textarea>
 									</Col>
 								</Row>
-
 								<button type="submit" className="button">
 									Submit
 								</button>
