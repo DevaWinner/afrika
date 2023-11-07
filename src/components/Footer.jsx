@@ -11,7 +11,7 @@ const Footer = () => {
 					<ul className="d-flex flex-column">
 						<li>
 							<i className="fa-solid fa-map-location"></i>
-							<p>123 Main Street, Cityville, Anytown, USA</p>
+							<p>We are available in Accra, Ghana and Utah, USA</p>
 						</li>
 						<li>
 							<i className="fa-solid fa-phone"></i>
@@ -21,24 +21,24 @@ const Footer = () => {
 						</li>
 						<li>
 							<i className="fa-solid fa-envelope"></i>
-							<p>info@inclusionafrika.com</p>
+							<p>info@inclusionafrika.org</p>
 						</li>
 					</ul>
 				</div>
 				<div className="socials d-flex flex-column">
 					<ul className="d-flex">
 						<li>
-							<a href="#">
+							<a href="https://facebook.com/inclusionafrika">
 								<i className="fa-brands fa-facebook"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="https://x.com/inclusionafrika">
 								<i className="fa-brands fa-x-twitter"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="https://linkedin.in/a/inclusionafrika">
 								<i className="fa-brands fa-linkedin"></i>
 							</a>
 						</li>

@@ -42,12 +42,14 @@ const NavBar = () => {
 					sticky="top"
 				>
 					<Container className="header">
-						<Navbar.Brand href="#" className="logo">
-							<img
-								src="/assets/inclusion.jpg"
-								className="img-fluid"
-								alt="Inclusion Afrika Logo"
-							/>
+						<Navbar.Brand>
+							<NavLink to="/" className="logo">
+								<img
+									src="/assets/inclusion-mobile.jpg"
+									className="img-fluid"
+									alt="Inclusion Afrika Logo"
+								/>
+							</NavLink>
 						</Navbar.Brand>
 						<Navbar.Toggle
 							aria-controls={`offcanvasNavbar-expand-${expand}`}
