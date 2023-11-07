@@ -1,5 +1,6 @@
 import "../styles/PartnerSection.css";
 import partnerLogo from "../data/partnerLogo.json";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Row, Col } from "react-bootstrap";
 
 const PartnerSection = () => {
@@ -18,7 +19,7 @@ const PartnerSection = () => {
 				{partnerLogo.map((partner, index) => (
 					<Col key={index} xl={2} md={1} xs={4}>
 						<div className="partner d-flex align-items-center flex-column">
-							<img
+							<LazyLoadImage
 								src={partner.partnerLogo}
 								alt={partner.partnerName}
 								className="img-fluid"

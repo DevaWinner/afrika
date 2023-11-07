@@ -42,10 +42,10 @@ const NavBar = () => {
 					sticky="top"
 				>
 					<Container className="header">
-						<Navbar.Brand>
-							<NavLink to="/" className="logo">
+						<Navbar.Brand className="logo">
+							<NavLink to="/">
 								<img
-									src="/assets/inclusion-mobile.jpg"
+									src="assets/logo.jpg"
 									className="img-fluid"
 									alt="Inclusion Afrika Logo"
 								/>

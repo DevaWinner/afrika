@@ -1,10 +1,11 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import PropTypes from "prop-types";
 
 const TestimonialCard = ({ text, author, image, country }) => {
 	return (
 		<div className="testimonial-card">
 			<div className="testimonial-image">
-				<img src={image} alt={`User ${author}`} />
+				<LazyLoadImage src={image} effect="blur" alt={`User ${author}`} />
 			</div>
 			<div className="testimonial-text">
 				<p>{text}</p>

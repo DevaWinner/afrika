@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/WhoWeAreSection.css";
 
 const WhoWeAreSection = () => {
@@ -11,16 +12,17 @@ const WhoWeAreSection = () => {
 				<p>
 					Inclusion Africa is a non-profit organization that is committed to
 					providing quality education to children with special needs in Africa.
-					We are currently operating in 10 African countries and we are committed
-					to expanding our reach to other African countries.
+					We are currently operating in 10 African countries and we are
+					committed to expanding our reach to other African countries.
 				</p>
 			</div>
 			<div className="intro d-flex">
 				<div className="mission d-flex">
 					<div className="img d-flex">
 						<div>
-							<img
+							<LazyLoadImage
 								src="/assets/transaction.jpg"
+                effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"
 							/>
@@ -50,8 +52,9 @@ const WhoWeAreSection = () => {
 					<div className="vertical-line"></div>
 					<div className="img d-flex">
 						<div>
-							<img
+							<LazyLoadImage
 								src="/assets/vision.jpg"
+                effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"
 							/>

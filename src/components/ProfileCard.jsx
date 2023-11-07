@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Col, Button, Modal } from "react-bootstrap";
 
 const ProfileCard = ({ type, name, intro, image, bio, linkedin }) => {
@@ -18,9 +19,10 @@ const ProfileCard = ({ type, name, intro, image, bio, linkedin }) => {
 		<Col lg={4} md={6} className="mb-5">
 			<div className={`${type.toLowerCase()}-member text-center`}>
 				<div>
-					<img
+					<LazyLoadImage
 						src={image}
 						alt={`${name} photograph`}
+            effect="blur"
 						className="img-fluid mb-3"
 					/>
 				</div>
