@@ -1,6 +1,5 @@
 {
 	"name": "Inclusion Afrika",
-	"homepage": "https://inclusionafrika.org",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -33,7 +32,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/username/repository.git",
+		"url": "https://github.com/DevaWinner/afrika.git",
 		"homepage": "https://inclusionafrika.org"
 	}
 }
