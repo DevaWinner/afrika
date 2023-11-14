@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Container, Row, Col, Form, Toast } from "react-bootstrap";
+import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import "../styles/ContactForm.css";
 
 const ContactForm = () => {
@@ -12,7 +12,7 @@ const ContactForm = () => {
 		message: "",
 	});
 
-	const [showToast, setShowToast] = useState(false);
+	const [showAlert, setShowAlert] = useState(false);
 
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,7 +28,7 @@ const ContactForm = () => {
 		})
 			.then((response) => {
 				console.log("Form submitted successfully", response);
-				setShowToast(true); // Show the toast
+				setShowAlert(true); // Show the alert
 				setFormData({
 					fname: "",
 					lname: "",
@@ -42,20 +42,22 @@ const ContactForm = () => {
 			});
 	};
 
+	useEffect(() => {
+		let timeoutId;
+
+		if (showAlert) {
+			timeoutId = setTimeout(() => {
+				setShowAlert(false);
+			}, 3000);
+		}
+
+		return () => {
+			clearTimeout(timeoutId);
+		};
+	}, [showAlert]);
+
 	return (
 		<>
-			<Toast
-				onClose={() => setShowToast(false)}
-				show={showToast}
-				delay={3000}
-				autohide
-			>
-				<Toast.Header>
-					<strong className="me-auto">Success</strong>
-				</Toast.Header>
-				<Toast.Body>Form submitted successfully!</Toast.Body>
-			</Toast>
-
 			<section className="contact-container top container ">
 				<Container>
 					<Row className="contact">
@@ -140,6 +142,15 @@ const ContactForm = () => {
 								<button type="submit" className="button">
 									Submit
 								</button>
+								<Alert
+									variant="success"
+									onClose={() => setShowAlert(false)}
+									show={showAlert}
+									className="mt-3"
+									dismissible
+								>
+									Thank you for contact us. Message sent successfully!
+								</Alert>
 							</Form>
 							<p className="agreement">
 								* By submitting this form, you agree to our{" "}
