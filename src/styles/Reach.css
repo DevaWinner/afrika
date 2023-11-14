@@ -64,8 +64,8 @@
 	}
 
 	.operations .text {
-		font-size: 0.9rem;
-		font-weight: 600;
+		font-size: 1rem;
+		font-weight: 700;
 		text-align: center;
 	}
 
@@ -84,7 +84,7 @@
 	}
 
 	.country p {
-		font-size: 0.6rem;
-		font-weight: 700;
+		font-size: 0.9rem !important;
+		font-weight: 600;
 	}
 }

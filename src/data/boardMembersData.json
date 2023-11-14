@@ -1,15 +1,17 @@
 [
 	{
-		"name": "Tasara Makazi",
+		"name": "Tasara Makasi",
 		"intro": "Board Member, Zimbabwe",
 		"image": "/assets/tasari.jpg",
-		"bio": "Tasara Makasi, born and raised in Zimbabwe, Africa, is married to Shamiso Mberengwa and is a proud parent of four children. With a professional background spanning 15 years, he held various roles in Seminaries and Institutes of Religion, including serving as the Area Director for the then-Africa Southeast Area. \n\nTasara briefly taught at the University of Zimbabwe's Department of Public Health and currently serves as the Area Manager for BYU Pathway Worldwide, overseeing Africa South and Africa Central Areas.\n\nTasara Makasi holds a BSc Degree in Environmental Health from Solusi University, Zimbabwe. He earned his Master of Public Health (MPH) from the University of South Africa, South Africa, and is a doctoral candidate (expected in 2024) in Business Administration and Leadership at California Intercontinental University, USA. \n\nIn addition to his professional pursuits, Tasara is passionate about going on safaris and exploring the natural environment. He values spending quality time with his family and is actively engaged in coaching and mentoring."
+		"bio": "Tasara Makasi, born and raised in Zimbabwe, Africa, is married to Shamiso Mberengwa and is a proud parent of four children. With a professional background spanning 15 years, he held various roles in Seminaries and Institutes of Religion, including serving as the Area Director for the then-Africa Southeast Area. \n\nTasara briefly taught at the University of Zimbabwe's Department of Public Health and currently serves as the Area Manager for BYU Pathway Worldwide, overseeing Africa South and Africa Central Areas.\n\nTasara Makasi holds a BSc Degree in Environmental Health from Solusi University, Zimbabwe. He earned his Master of Public Health (MPH) from the University of South Africa, South Africa, and is a doctoral candidate (expected in 2024) in Business Administration and Leadership at California Intercontinental University, USA. \n\nIn addition to his professional pursuits, Tasara is passionate about going on safaris and exploring the natural environment. He values spending quality time with his family and is actively engaged in coaching and mentoring.",
+    "linkedin": "https://www.linkedin.com/in/tasara-makasi-1a382696/"
 	},
 	{
 		"name": "Steve Kapila Mutombo",
 		"intro": "Board Member, DR Congo",
 		"image": "https://thelordshands.org/wp-content/uploads/2022/10/SteveMKapila-1-1.jpeg",
-		"bio": "Steve is the founder of The Lord's Hands NGO, and passionate about humanitarian and social needs. His natural interest in charitable activities grew as he worked with LDS Charities assisting a senior missionary couple, and served as Bishop of the Kisima Ward of The Church of Jesus Christ of Latter-day Saints. \n\nSteve's professional experience includes working for The Church of Jesus Christ of Latter-day Saints in purchasing, fleet, information and communication systems, travel; distribution planning and sales, and as Regional Support Services Manager in the central region of the Africa Central Area. He holds a B.S in Systems Administration (IT) from ESIS, Lubumbashi DRC, a Postgraduate Diploma in Business Management from Regent Business School in South Africa, and is currently pursuing his Master's degree in Public Administration at Brigham Young University Provo-Utah. \n\nHe is married to Mukaz Kapila. They have 3 children."
+		"bio": "Steve is the founder of The Lord's Hands NGO, and passionate about humanitarian and social needs. His natural interest in charitable activities grew as he worked with LDS Charities assisting a senior missionary couple, and served as Bishop of the Kisima Ward of The Church of Jesus Christ of Latter-day Saints. \n\nSteve's professional experience includes working for The Church of Jesus Christ of Latter-day Saints in purchasing, fleet, information and communication systems, travel; distribution planning and sales, and as Regional Support Services Manager in the central region of the Africa Central Area. He holds a B.S in Systems Administration (IT) from ESIS, Lubumbashi DRC, a Postgraduate Diploma in Business Management from Regent Business School in South Africa, and is currently pursuing his Master's degree in Public Administration at Brigham Young University Provo-Utah. \n\nHe is married to Mukaz Kapila. They have 3 children.",
+    "linkedin": "https://www.linkedin.com/in/steve-kapila-mutombo-38855b123/"
 	},
 	{
 		"name": "Gary and Susan Peterson",
@@ -20,7 +22,8 @@
 	{
 		"name": "Tim Wanyonyi",
 		"intro": "Board Member",
-		"image": "path/to/image2.jpg",
-		"bio": "Jane Smith brings valuable insights to the board and has a background in..."
+		"image": "/assets/tim.jpeg",
+		"bio": "Jane Smith brings valuable insights to the board and has a background in...",
+		"linkedin": "https://www.linkedin.com/in/timsenior12219/"
 	}
 ]

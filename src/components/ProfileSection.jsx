@@ -6,7 +6,7 @@ const ProfileSection = ({ profiles, type }) => {
 	return (
 		<section className={`${type.toLowerCase()}-members my-5`}>
 			<Container>
-				<Row className="d-flex justify-content-center">
+				<Row className="d-flex justify-content-center profiles" xs={12}>
 					{profiles.map((profile, index) => (
 						<ProfileCard key={index} type={type} {...profile} />
 					))}

@@ -6,7 +6,6 @@ import techTeamData from "../data/techTeamData.json";
 import "../styles/OurTeam.css";
 
 const OurTeam = () => {
-  
 	return (
 		<>
 			<Navbar />
@@ -24,9 +23,9 @@ const OurTeam = () => {
 				<div className="text d-flex">
 					<div className="title d-flex"></div>
 					<p>
-						Our team is made up of a diverse group of people from all over the
-						world. We are united by our passion for helping others and our
-						desire to make a difference in the world.
+						Our team is made up of a diverse group of people and experiences. We
+						are united by our passion for helping others and our desire to make
+						a difference in the world.
 					</p>
 				</div>
 				<div className="text d-flex">

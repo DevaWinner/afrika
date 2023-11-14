@@ -23,7 +23,7 @@ const ProfileCard = ({ type, name, intro, image, bio, linkedin }) => {
 						src={image}
 						alt={`${name} photograph`}
             effect="blur"
-						className="img-fluid mb-3"
+						className="img-fluid mb-3 photo"
 					/>
 				</div>
 				<h3 className="fs-5">{name}</h3>
