@@ -28,7 +28,7 @@ const ContactForm = () => {
 		})
 			.then((response) => {
 				console.log("Form submitted successfully", response);
-				setShowAlert(true); // Show the alert
+				setShowAlert(true);
 				setFormData({
 					fname: "",
 					lname: "",
