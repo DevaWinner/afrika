@@ -13,7 +13,6 @@ const Reach = () => {
 						<div className="country d-flex align-items-center flex-column justify-content-center">
 							<img
 								src={flag.flagPath}
-								effect="blur"
 								alt={`${flag.country} Flag`}
 								className="img-fluid"
 								style={{ maxWidth: "60%", height: "auto" }}

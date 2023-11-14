@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import axios from "axios";
 import "../styles/ContactForm.css";
 
-const SupportForm = () => {
+const SupportForm = ({ setShowAlert }) => {
 	const [formData, setFormData] = useState({
 		fname: "",
 		lname: "",
@@ -13,19 +13,17 @@ const SupportForm = () => {
 		message: "",
 	});
 
-	const [showToast, setShowToast] = useState(false);
-
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		axios({
 			method: "POST",
-			url: "https://your-api-endpoint.com",
+			url: "https://usebasin.com/f/588bb7afd7a4",
 			headers: { "Content-Type": "application/json" },
 			data: formData,
 		})
 			.then((response) => {
 				console.log("Form submitted successfully", response);
-				setShowToast(true);
+				setShowAlert(true);
 				setFormData({
 					fname: "",
 					lname: "",
@@ -45,7 +43,11 @@ const SupportForm = () => {
 	};
 
 	return (
-		<Form onSubmit={handleSubmit} className="support-form d-flex flex-column">
+		<Form
+			onSubmit={handleSubmit}
+			className="support-form d-flex flex-column"
+			style={{ position: "relative" }}
+		>
 			<Row className="mb-3">
 				<Col>
 					<label htmlFor="fname">First Name</label>
@@ -139,6 +141,25 @@ const SupportForm = () => {
 };
 
 const OtherWaysToSupport = () => {
+	const [showAlert, setShowAlert] = useState(false);
+
+	const handleAlertClose = () => {
+		setShowAlert(false);
+	};
+
+	useEffect(() => {
+		let timeoutId;
+		if (showAlert) {
+			timeoutId = setTimeout(() => {
+				handleAlertClose();
+			}, 3000);
+		}
+
+		return () => {
+			clearTimeout(timeoutId);
+		};
+	}, [showAlert]);
+
 	return (
 		<section className="contact-container bg-light text-dark container top">
 			<Container>
@@ -151,7 +172,17 @@ const OtherWaysToSupport = () => {
 						</p>
 					</Col>
 					<Col md={6} className="bg-white p-4 rounded shadow">
-						<SupportForm />
+						<SupportForm setShowAlert={setShowAlert} />
+						{showAlert && (
+							<Alert
+								variant="success"
+								onClose={handleAlertClose}
+								dismissible
+								className="mt-3"
+							>
+								Message sent successfully!
+							</Alert>
+						)}
 					</Col>
 				</Row>
 			</Container>
