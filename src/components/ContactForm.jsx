@@ -165,7 +165,7 @@ const ContactForm = () => {
 								</li>
 								<li>
 									<i className="fa-solid fa-envelope"></i>
-									<p>info@inclusionafrika.com</p>
+									<p>info@inclusionafrika.org</p>
 								</li>
 							</ul>
 						</Col>
