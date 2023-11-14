@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import axios from "axios";
-import "../styles/ContactForm.css"; // Import a CSS file for custom styling
+import "../styles/ContactForm.css";
 
 const SupportForm = () => {
 	const [formData, setFormData] = useState({
@@ -17,19 +17,15 @@ const SupportForm = () => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		// Perform form submission logic here
-
-		// Axios logic for form submission
 		axios({
 			method: "POST",
-			url: "https://your-api-endpoint.com", // Replace with your actual API endpoint
+			url: "https://your-api-endpoint.com",
 			headers: { "Content-Type": "application/json" },
 			data: formData,
 		})
 			.then((response) => {
 				console.log("Form submitted successfully", response);
 				setShowToast(true);
-				// Clear form fields after successful submission
 				setFormData({
 					fname: "",
 					lname: "",
