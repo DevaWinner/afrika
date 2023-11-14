@@ -12,6 +12,7 @@
 
 .footer-details {
 	gap: 5em;
+	margin: 0 auto;
 }
 
 .footer-contact {
@@ -29,7 +30,7 @@
 }
 
 .footer-contact ul {
-	gap: 0.2em;
+	gap: 1.5em;
 	padding-left: 0;
 }
 
@@ -37,10 +38,15 @@
 	list-style: none;
 	display: flex;
 	gap: 1rem;
+	align-items: center;
 }
 
 .footer-contact ul li i {
 	font-size: 1rem;
+}
+
+.footer-contact ul li p {
+	margin: 0;
 }
 
 .socials {
@@ -118,21 +124,22 @@
 }
 
 .developer-br {
-  display: none;
+	display: none;
 }
 
 @media (max-width: 480px) {
 	.footer {
-		padding: 1rem;
+		padding: 1rem 0.5rem;
 	}
 
 	.footer-details {
 		flex-direction: column;
 		gap: 0;
+		margin: 0;
 	}
 
 	.inclusion {
-		font-size: 1.2rem;
+		font-size: 1.4rem !important;
 		font-weight: 700;
 	}
 
@@ -145,7 +152,7 @@
 	}
 
 	.footer-contact ul li i {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 
 	.socials ul {
@@ -178,7 +185,7 @@
 		text-align: center;
 	}
 
-  .developer-br {
-    display: block;
-  }
+	.developer-br {
+		display: block;
+	}
 }
