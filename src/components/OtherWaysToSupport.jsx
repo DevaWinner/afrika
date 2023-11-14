@@ -91,7 +91,6 @@ const SupportForm = ({ setShowAlert }) => {
 					<label htmlFor="phone">Phone Number</label>
 					<input
 						type="tel"
-						pattern="[0-9]"
 						required
 						title="Please enter a phone number"
 						name="phone"
