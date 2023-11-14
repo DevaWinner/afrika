@@ -11,10 +11,8 @@ const AboutStory = () => {
 						<hr className="bg-primary" />
 					</div>
 					<p>
-						Inclusion Afrika Initiative Limited was born from a shared dream, a
-						vision of hope, and a commitment to change. Our story is one of
-						unity, resilience, and the unwavering belief in the potential of
-						African young adults.
+						Inclusion Afrika was created to exercise the "power of one" and to
+						act on our unwavering belief in the potential of young Africans.
 					</p>
 				</div>
 				<Row className="story-container d-flex flex-column">
