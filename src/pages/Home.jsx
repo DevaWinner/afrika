@@ -23,7 +23,7 @@ function Home() {
 								Become a
 								<br />
 								Catalyst for <br />
-								Growth in Africa
+								Good in Africa
 							</h1>
 						</div>
 					</div>
@@ -34,7 +34,6 @@ function Home() {
 				<CtaBox />
 				<ContactForm />
 				<PartnerSection />
-				<Testimonial />
 			</div>
 		</>
 	);

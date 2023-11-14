@@ -6,6 +6,7 @@ import techTeamData from "../data/techTeamData.json";
 import "../styles/OurTeam.css";
 
 const OurTeam = () => {
+  
 	return (
 		<>
 			<Navbar />

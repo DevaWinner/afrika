@@ -5,10 +5,10 @@ import "../styles/CtaBox.css";
 const CtaBox = () => {
 	return (
 		<section className="cta-box d-flex flex-column container top">
-			<p className="cta-title">Join Us in Making a Difference</p>
+			<p className="cta-title">Become a catalyst for good</p>
 			<div className="d-flex">
 				<p className="cta-description">
-					Support us on this empowering journey and be part of the change.
+					Please support our cause and experience the "power of one"
 				</p>
 				<div className="button-container d-flex">
 					<div>

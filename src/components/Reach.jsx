@@ -1,18 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flagsData from "../data/FlagsData.json";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/Reach.css";
 
 const Reach = () => {
 	return (
 		<Container className="operations d-flex align-items-center flex-column">
-			<p className="text">We are making impacts in 10 African countries</p>
+			<h3 className="text">Our Footprint</h3>
 			<Row className="countries">
 				{flagsData.map((flag, index) => (
 					<Col key={index} xl={2} md={1} xs={4}>
-						<div className="country d-flex align-items-center flex-column">
-							<LazyLoadImage
+						<div className="country d-flex align-items-center flex-column justify-content-center">
+							<img
 								src={flag.flagPath}
 								effect="blur"
 								alt={`${flag.country} Flag`}

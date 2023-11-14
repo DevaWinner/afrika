@@ -10,10 +10,10 @@ const WhoWeAreSection = () => {
 					<hr />
 				</div>
 				<p>
-					Inclusion Africa is a non-profit organization that is committed to
-					providing quality education to children with special needs in Africa.
-					We are currently operating in 10 African countries and we are
-					committed to expanding our reach to other African countries.
+					Inclusion Afrika is a non-profit organization that believes in the
+					"power of one." We believe "one donor" and "one African" recipient can
+					be a catalyst for good in our world. The donor's expression of love
+					unleashes potential and results in meaningful change in Africa.
 				</p>
 			</div>
 			<div className="intro d-flex">
@@ -22,7 +22,7 @@ const WhoWeAreSection = () => {
 						<div>
 							<LazyLoadImage
 								src="/assets/transaction.jpg"
-                effect="blur"
+								effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"
 							/>
@@ -43,7 +43,7 @@ const WhoWeAreSection = () => {
 					<div className="description text-justify d-flex">
 						<h3>Our Vision</h3>
 						<p>
-							We empower lives by providing micro-loans and sponsoring
+							We transform lives by providing micro-loans and sponsoring
 							educational activities. By blending financial support with
 							educational opportunities, we pave the way for a brighter future
 							in young adults.
@@ -54,7 +54,7 @@ const WhoWeAreSection = () => {
 						<div>
 							<LazyLoadImage
 								src="/assets/vision.jpg"
-                effect="blur"
+								effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"
 							/>
