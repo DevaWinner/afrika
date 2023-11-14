@@ -58,6 +58,7 @@ const SupportForm = ({ setShowAlert }) => {
 						className="form-control p-2"
 						value={formData.fname}
 						onChange={handleChange}
+						required
 					/>
 				</Col>
 				<Col>
@@ -69,6 +70,7 @@ const SupportForm = ({ setShowAlert }) => {
 						className="form-control p-2"
 						value={formData.lname}
 						onChange={handleChange}
+						required
 					/>
 				</Col>
 			</Row>
@@ -82,12 +84,16 @@ const SupportForm = ({ setShowAlert }) => {
 						className="form-control p-2"
 						value={formData.email}
 						onChange={handleChange}
+						required
 					/>
 				</Col>
 				<Col>
 					<label htmlFor="phone">Phone Number</label>
 					<input
-						type="text"
+						type="tel"
+						pattern="[0-9]"
+						required
+						title="Please enter a phone number"
 						name="phone"
 						id="phone"
 						className="form-control p-2"
