@@ -7,7 +7,7 @@ const AboutHero = () => {
 			<section className="about-hero">
 				<img src="/assets/about-hero-scaled.jpg" alt="About Hero Image" className="img-fluid" />
 				<div className="about-hero-text">
-					<h1>About Inclusion Africa</h1>
+					<h2>About Inclusion Africa</h2>
 					<p>
 						Inclusion Afrika was incorporated in Accra Ghana by Joseph Bentum
 						and David Rupper in June 2023. Although Inclusion Afrika is based in

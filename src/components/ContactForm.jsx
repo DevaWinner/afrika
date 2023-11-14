@@ -155,7 +155,7 @@ const ContactForm = () => {
 							<ul className="address-items">
 								<li>
 									<i className="fa-solid fa-map-location"></i>
-									<p>123 Main Street, Cityville, Anytown, USA</p>
+									<p>We are available in Accra, Ghana and Utah, USA.</p>
 								</li>
 								<li>
 									<i className="fa-solid fa-phone"></i>
