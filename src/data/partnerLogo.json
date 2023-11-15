@@ -1,18 +1,18 @@
 [
 	{
 		"partnerName": "Lgo 1",
-		"partnerLogo": "/assets/partners/Skep.png"
+		"partnerLogo": "https://inclusionafrika.imgix.net/partners/Skep.png"
 	},
 	{
 		"partnerName": "Lgo 2",
-		"partnerLogo": "/assets/partners/Agilix.svg"
+		"partnerLogo": "https://inclusionafrika.imgix.net/partners/Agilix.svg"
 	},
 	{
 		"partnerName": "Lgo 3",
-		"partnerLogo": "/assets/partners/BYUMS.webp"
+		"partnerLogo": "https://inclusionafrika.imgix.net/partners/BYUMS.webp"
 	},
 	{
 		"partnerName": "Lgo 4",
-		"partnerLogo": "/assets/partners/HHH.webp"
+		"partnerLogo": "https://inclusionafrika.imgix.net/partners/HHH.webp"
 	}
 ]

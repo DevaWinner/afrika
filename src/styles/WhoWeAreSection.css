@@ -57,11 +57,13 @@
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .description h3 {
-	font-size: 1rem;
+	font-size: 1.2rem !important;
 	font-weight: 600;
+  margin: 0;
 }
 
 .description p {
@@ -72,6 +74,11 @@
 
 .intro .vision {
 	margin-top: 3rem;
+}
+
+img.icons {
+	width: 50px;
+	height: auto;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -87,7 +94,7 @@
 
 	.mission {
 		flex-direction: column;
-		gap: 1rem;
+		gap: 0rem;
 		margin-top: 0em;
 	}
 
@@ -96,9 +103,7 @@
 	}
 
 	.vertical-line {
-		width: 90px;
-		height: 5px;
-		margin-top: 0;
+		display: none;
 	}
 
 	.description {
@@ -117,7 +122,7 @@
 
 	.vision {
 		flex-direction: column-reverse;
-		gap: 1rem;
+		gap: 0rem;
 	}
 
 	.intro .vision {

@@ -129,7 +129,7 @@
 
 @media (max-width: 480px) {
 	.footer {
-		padding: 1rem 0.5rem;
+		padding: 1rem;
 	}
 
 	.footer-details {
@@ -142,15 +142,7 @@
 		font-size: 1.4rem !important;
 		font-weight: 700;
 	}
-
-	.footer-contact {
-		gap: 0.5em;
-	}
-
-	.footer-contact ul li {
-		gap: 0.8rem;
-	}
-
+  
 	.footer-contact ul li i {
 		font-size: 1rem;
 	}
@@ -165,10 +157,6 @@
 
 	.newsletter {
 		gap: 0;
-	}
-
-	.newsletter p {
-		font-size: 0.8rem;
 	}
 
 	.subscribe-input {

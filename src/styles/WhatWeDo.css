@@ -7,7 +7,7 @@ div.card {
 }
 
 .card img {
-	height: 200px;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 10px 10px 0 0 !important;
 }
@@ -39,7 +39,7 @@ h3.card-title {
 	}
 
 	.card img {
-		height: 150px;
+		height: 200px;
 	}
 
 	h5.card-title {
