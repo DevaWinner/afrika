@@ -64,7 +64,6 @@
 
 	.text p {
 		max-width: 90%;
-		font-size: 0.9em;
 	}
 
 	.button {
@@ -88,6 +87,6 @@
 	}
 
   p {
-    font-size: 0.9rem !important;
+    font-size: 0.95rem !important;
   }
 }
