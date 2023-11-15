@@ -11,7 +11,7 @@ const OurTeam = () => {
 			<Navbar />
 			<div className="team-header">
 				<img
-					src="/assets/medium-shot-happy-african-people.jpg"
+					src="https://inclusionafrika.imgix.net/happy-people.jpg"
 					alt="medium-shot-happy-african-people"
 					className="img-fluid"
 				/>

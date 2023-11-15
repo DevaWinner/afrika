@@ -5,7 +5,11 @@ const AboutHero = () => {
 	return (
 		<>
 			<section className="about-hero">
-				<img src="/assets/about-hero-scaled.jpg" alt="About Hero Image" className="img-fluid" />
+				<img
+					src="https://inclusionafrika.imgix.net/about-hero-scaled.jpg"
+					alt="About Hero Image"
+					className="img-fluid"
+				/>
 				<div className="about-hero-text">
 					<h2>About Inclusion Africa</h2>
 					<p>

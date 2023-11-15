@@ -21,7 +21,7 @@ const WhoWeAreSection = () => {
 					<div className="img d-flex">
 						<div>
 							<LazyLoadImage
-								src="/assets/transaction.jpg"
+								src="https://inclusionafrika.imgix.net/transaction.jpg"
 								effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"
@@ -30,30 +30,45 @@ const WhoWeAreSection = () => {
 					</div>
 					<div className="vertical-line"></div>
 					<div className="description text-justify d-flex">
-						<h3>Our Mission</h3>
+						<div className="d-flex justify-content-center align-items-center gap-4">
+							<img
+								src="https://inclusionafrika.imgix.net/target.png"
+								alt="Target Graphic"
+								className="icons"
+							/>
+							<h3>Our Mission</h3>
+						</div>
+
 						<p>
-							We facilitate inclusion and self-reliance, empowering individuals
-							to thrive. Through sustainable programs, we break down barriers,
-							promote diversity, and create opportunities that enable young
-							adults to progress.
+							Our mission is to facilitate inclusion and self-reliance,
+							empowering individuals to thrive. Through sustainable programs, we
+							break down barriers, promote diversity, and create opportunities
+							that enable young adults to progress.
 						</p>
 					</div>
 				</div>
 				<div className="vision d-flex">
 					<div className="description text-justify d-flex">
-						<h3>Our Vision</h3>
+						<div className="d-flex justify-content-center align-items-center gap-4">
+							<img
+								src="https://inclusionafrika.imgix.net/opportunity.png"
+								alt="Target Graphic"
+								className="icons"
+							/>
+							<h3>Our Vision</h3>
+						</div>
 						<p>
-							We transform lives by providing micro-loans and sponsoring
-							educational activities. By blending financial support with
-							educational opportunities, we pave the way for a brighter future
-							in young adults.
+							Our vision is to transform lives by providing micro-loans and
+							sponsoring educational activities. By blending financial support
+							with educational opportunities, we pave the way for a brighter
+							future in young adults.
 						</p>
 					</div>
 					<div className="vertical-line"></div>
 					<div className="img d-flex">
 						<div>
 							<LazyLoadImage
-								src="/assets/vision.jpg"
+								src="https://inclusionafrika.imgix.net/vision.jpg"
 								effect="blur"
 								alt="Inclusion Africa"
 								className="img-fluid"

@@ -1,7 +1,3 @@
-import React from "react";
-import image1 from "/assets/carousel/1.jpg";
-import image2 from "/assets/carousel/2.jpg";
-import image3 from "/assets/carousel/3.jpg";
 import "../styles/Carousel.css";
 
 const HeroCarousel = () => {
@@ -15,7 +11,7 @@ const HeroCarousel = () => {
 				<div className="carousel-inner">
 					<div className="carousel-item active">
 						<img
-							src={image1}
+							src="https://inclusionafrika.imgix.net/1.jpg"
 							className="d-block w-100 h-100 carousel-image"
 							alt="First slide"
 						/>
@@ -23,7 +19,7 @@ const HeroCarousel = () => {
 
 					<div className="carousel-item">
 						<img
-							src={image2}
+							src="https://inclusionafrika.imgix.net/2.jpg"
 							className="d-block w-100 h-100 carousel-image"
 							alt="Second slide"
 						/>
@@ -31,7 +27,7 @@ const HeroCarousel = () => {
 
 					<div className="carousel-item">
 						<img
-							src={image3}
+							src="https://inclusionafrika.imgix.net/3.jpg"
 							className="d-block w-100 h-100 carousel-image"
 							alt="Third slide"
 						/>

@@ -19,7 +19,7 @@ const WhatWeDo = () => {
 			<div className="card-group d-flex container">
 				<div className="card">
 					<LazyLoadImage
-						src="/assets/seller.jpg"
+						src="https://inclusionafrika.imgix.net/seller.jpg"
 						effect="blur"
 						className="card-img-top"
 						alt="..."
@@ -36,8 +36,8 @@ const WhatWeDo = () => {
 				</div>
 				<div className="card">
 					<LazyLoadImage
-						src="/assets/students.jpg"
-            effect="blur"
+						src="https://inclusionafrika.imgix.net/students.jpg"
+						effect="blur"
 						className="card-img-top"
 						alt="..."
 					/>
@@ -53,8 +53,8 @@ const WhatWeDo = () => {
 				</div>
 				<div className="card">
 					<LazyLoadImage
-						src="/assets/hand-shake.jpg"
-            effect="blur"
+						src="https://inclusionafrika.imgix.net/hand-shake.jpg"
+						effect="blur"
 						className="card-img-top"
 						alt="..."
 					/>

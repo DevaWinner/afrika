@@ -45,7 +45,7 @@ const NavBar = () => {
 						<Navbar.Brand className="logo">
 							<NavLink to="/">
 								<img
-									src="assets/logo.jpg"
+									src="https://inclusionafrika.imgix.net/logo.jpg"
 									className="img-fluid"
 									alt="Inclusion Afrika Logo"
 								/>

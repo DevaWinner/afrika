@@ -11,7 +11,7 @@ function GetInvolved() {
 			<Navbar />
 			<div className="team-header">
 				<img
-					src="/assets/hand-shake.jpg"
+					src="https://inclusionafrika.imgix.net/hand-shake.jpg"
 					alt="medium-shot-happy-african-people"
 					className="img-fluid"
 				/>

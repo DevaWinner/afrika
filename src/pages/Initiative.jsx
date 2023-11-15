@@ -9,7 +9,7 @@ function Initiative() {
 			<Navbar />
 			<div className="team-header">
 				<img
-					src="/assets/medium-shot-happy-community.jpg"
+					src="https://inclusionafrika.imgix.net/community.jpg"
 					alt="medium-shot-happy-african-people"
 					className="img-fluid"
 				/>

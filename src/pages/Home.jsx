@@ -6,7 +6,6 @@ import WhatWeDo from "../components/WhatWeDo";
 import CtaBox from "../components/CtaBox";
 import ContactForm from "../components/ContactForm";
 import PartnerSection from "../components/PartnerSection";
-import Testimonial from "../components/Testimonial";
 import "../styles/Home.css";
 
 function Home() {
