@@ -1,25 +1,89 @@
 import DonateButton from "./DonateButton";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../styles/CtaBox.css";
 
 const CtaBox = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: false,
+	});
+
+	const ctaVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+	const titleVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+				delay: 0.5,
+			},
+		},
+	};
+
+	const descriptionVariants = {
+		hidden: { opacity: 0, x: -20 },
+		show: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				duration: 1,
+				delay: 1,
+			},
+		},
+	};
+
+	const buttonContainerVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+				delay: 1.5,
+			},
+		},
+	};
+
 	return (
-		<section className="cta-box d-flex flex-column container top">
-			<p className="cta-title">Become a catalyst for good</p>
-			<div className="d-flex">
-				<p className="cta-description">
+		<motion.section
+			className="cta-box d-flex flex-column container top"
+			variants={ctaVariants}
+			initial="hidden"
+			animate={inView ? "show" : "hidden"}
+			ref={ref}
+		>
+			<motion.p className="cta-title" variants={titleVariants}>
+				Become a catalyst for good
+			</motion.p>
+			<motion.div className="d-flex" variants={ctaVariants}>
+				<motion.p className="cta-description" variants={descriptionVariants}>
 					Please support our cause and experience the "power of one"
-				</p>
-				<div className="button-container d-flex">
-					<div>
+				</motion.p>
+				<motion.div
+					className="button-container d-flex"
+					variants={buttonContainerVariants}
+				>
+					<motion.div>
 						<DonateButton />
-					</div>
+					</motion.div>
 					<Link to="/getinvolved">
-						<button className="mentor-btn">Get involved</button>
+						<motion.button className="mentor-btn">Get involved</motion.button>
 					</Link>
-				</div>
-			</div>
-		</section>
+				</motion.div>
+			</motion.div>
+		</motion.section>
 	);
 };
 
