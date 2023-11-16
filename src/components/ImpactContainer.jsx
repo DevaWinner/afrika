@@ -1,30 +1,109 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../styles/ImpactContainer.css";
 
 const ImpactContainer = () => {
+	const { ref, inView } = useInView({
+		triggerOnce: false,
+	});
+
+	const containerVariants = {
+		hidden: { opacity: 0, y: 50 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+	const textVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+				delay: 0.5,
+			},
+		},
+	};
+
+	const colVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1,
+			},
+		},
+	};
+
+	const { ref: col1Ref, inView: col1InView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: col2Ref, inView: col2InView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: col3Ref, inView: col3InView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: col4Ref, inView: col4InView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<section className="impact-container top d-flex flex-column align-items-center container">
+		<motion.section
+			className="impact-container top d-flex flex-column align-items-center container"
+			variants={containerVariants}
+			initial="hidden"
+			animate={inView ? "show" : "hidden"}
+			ref={ref}
+		>
 			<Container>
 				<Row>
 					<div className="text d-flex">
 						<div className="title d-flex">
-							<h2>Our Impact in Africa</h2>
-							<hr className="bg-primary" />
+							<motion.h2
+								variants={textVariants}
+								initial="hidden"
+								animate="show"
+							>
+								Our Impact in Africa
+							</motion.h2>
+							<motion.hr
+								className="bg-primary"
+								variants={textVariants}
+								initial="hidden"
+								animate="show"
+							/>
 						</div>
-						<p>
+						<motion.p variants={textVariants} initial="hidden" animate="show">
 							Our commitment equals impact. Every action makes a difference in
 							the lives of African young adults
-						</p>
+						</motion.p>
 					</div>
 				</Row>
 				<Row className="about-impact d-flex justify-content-center ">
 					<Col
 						xs={6}
 						xl={3}
-						className="impact-item d-flex flex-column align-items-center "
+						className="impact-item d-flex flex-column align-items-center"
+						ref={col1Ref}
 					>
-						<div className="item-1">
+						<motion.div
+							className="item-1"
+							variants={colVariants}
+							initial="hidden"
+							animate={col1InView ? "show" : "hidden"}
+						>
 							<svg
 								viewBox="0 0 162 141"
 								fill="none"
@@ -38,7 +117,7 @@ const ImpactContainer = () => {
 									fillOpacity="0.26"
 								/>
 							</svg>
-						</div>
+						</motion.div>
 						<p className="impact-texts">
 							2,000 lives <br />
 							impacted
@@ -48,8 +127,13 @@ const ImpactContainer = () => {
 						xs={6}
 						xl={3}
 						className="impact-item item-2 d-flex flex-column align-items-center"
+						ref={col2Ref}
 					>
-						<div>
+						<motion.div
+							variants={colVariants}
+							initial="hidden"
+							animate={col2InView ? "show" : "hidden"}
+						>
 							<svg
 								viewBox="0 0 153 145"
 								fill="none"
@@ -63,7 +147,7 @@ const ImpactContainer = () => {
 									fillOpacity="0.26"
 								/>
 							</svg>
-						</div>
+						</motion.div>
 						<p className="impact-texts">
 							$50,000 in <br />
 							micro loans made
@@ -73,8 +157,13 @@ const ImpactContainer = () => {
 						xs={6}
 						xl={3}
 						className="impact-item item-3 d-flex flex-column align-items-center"
+						ref={col3Ref}
 					>
-						<div>
+						<motion.div
+							variants={colVariants}
+							initial="hidden"
+							animate={col3InView ? "show" : "hidden"}
+						>
 							<svg
 								viewBox="0 0 167 149"
 								fill="none"
@@ -88,7 +177,7 @@ const ImpactContainer = () => {
 									fillOpacity="0.26"
 								/>
 							</svg>
-						</div>
+						</motion.div>
 						<p className="impact-texts">
 							Activities in <br />
 							10 countries
@@ -98,13 +187,17 @@ const ImpactContainer = () => {
 						xs={6}
 						xl={3}
 						className="impact-item item-4 d-flex flex-column align-items-center"
+						ref={col4Ref}
 					>
-						<div>
+						<motion.div
+							variants={colVariants}
+							initial="hidden"
+							animate={col4InView ? "show" : "hidden"}
+						>
 							<svg
 								viewBox="0 0 153 145"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
-								className="svg-4"
 							>
 								<path
 									fillRule="evenodd"
@@ -114,15 +207,15 @@ const ImpactContainer = () => {
 									fillOpacity="0.26"
 								/>
 							</svg>
-						</div>
+						</motion.div>
 						<p className="impact-texts">
 							$36,000 in <br />
-							educational assistance  
+							educational assistance
 						</p>
 					</Col>
 				</Row>
 			</Container>
-		</section>
+		</motion.section>
 	);
 };
 
