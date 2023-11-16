@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Alert } from "react-bootstrap";
 import axios from "axios";
 import "../styles/ContactForm.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const SupportForm = ({ setShowAlert }) => {
 	const [formData, setFormData] = useState({
@@ -42,11 +44,19 @@ const SupportForm = ({ setShowAlert }) => {
 		setFormData({ ...formData, [event.target.name]: event.target.value });
 	};
 
+	const { ref: formRef, inView: formInView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<Form
+		<motion.Form
 			onSubmit={handleSubmit}
 			className="support-form d-flex flex-column"
 			style={{ position: "relative" }}
+			ref={formRef}
+			initial={{ opacity: 0, y: 100 }}
+			animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+			transition={{ duration: 0.8 }}
 		>
 			<Row className="mb-3">
 				<Col>
@@ -138,10 +148,16 @@ const SupportForm = ({ setShowAlert }) => {
 				</Col>
 			</Row>
 
-			<button type="submit" className="button align-self-center">
+			<motion.button
+				type="submit"
+				className="button align-self-center"
+				initial={{ opacity: 0, y: 50 }}
+				animate={formInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+				transition={{ duration: 0.8 }}
+			>
 				Submit
-			</button>
-		</Form>
+			</motion.button>
+		</motion.Form>
 	);
 };
 
@@ -165,16 +181,48 @@ const OtherWaysToSupport = () => {
 		};
 	}, [showAlert]);
 
+	const { ref: waysToSupportRef, inView: waysToSupportInView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<section className="contact-container bg-light text-dark container top">
+		<motion.section
+			className="contact-container bg-light text-dark container top"
+			ref={waysToSupportRef}
+			initial={{ opacity: 0, y: 100 }}
+			animate={
+				waysToSupportInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }
+			}
+			transition={{ duration: 0.8 }}
+		>
 			<Container>
 				<Row>
 					<Col md={6} className="text-container p-5 rounded">
-						<h2 className="mb-3">Other Ways to Support</h2>
-						<p className="mb-4">
+						<motion.h2
+							className="mb-3"
+							initial={{ opacity: 0, x: -50 }}
+							animate={
+								waysToSupportInView
+									? { opacity: 1, x: 0 }
+									: { opacity: 0, x: -50 }
+							}
+							transition={{ duration: 0.8 }}
+						>
+							Other Ways to Support
+						</motion.h2>
+						<motion.p
+							className="mb-4"
+							initial={{ opacity: 0, x: 50 }}
+							animate={
+								waysToSupportInView
+									? { opacity: 1, x: 0 }
+									: { opacity: 0, x: 50 }
+							}
+							transition={{ duration: 0.8 }}
+						>
 							For larger donations or other kinds of donations, please contact
 							us directly by filling out the form below.
-						</p>
+						</motion.p>
 					</Col>
 					<Col md={6} className="bg-white p-4 rounded shadow">
 						<SupportForm setShowAlert={setShowAlert} />
@@ -191,7 +239,7 @@ const OtherWaysToSupport = () => {
 					</Col>
 				</Row>
 			</Container>
-		</section>
+		</motion.section>
 	);
 };
 
