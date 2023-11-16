@@ -1,24 +1,99 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../styles/WhoWeAreSection.css";
 
 const WhoWeAreSection = () => {
+	const { ref: titleRef, inView: titleInView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: missionRef, inView: missionInView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: visionRef, inView: visionInView } = useInView({
+		triggerOnce: false,
+	});
+
+	const titleVariants = {
+		hidden: { opacity: 0, y: 50 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+	const sectionVariants = {
+		hidden: { opacity: 0, y: 100 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+	const textVariants = {
+		hidden: { opacity: 0, x: -50 },
+		show: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+	const imgVariants = {
+		hidden: { opacity: 0, scale: 0.8 },
+		show: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
 	return (
 		<section className="who-we-are container">
-			<div className="text d-flex">
+			<div className="text d-flex" ref={titleRef}>
 				<div className="title d-flex">
-					<h2>Who we are</h2>
-					<hr />
+					<motion.h2
+						variants={titleVariants}
+						initial="hidden"
+						animate={titleInView ? "show" : "hidden"}
+					>
+						Who we are
+					</motion.h2>
+					<motion.hr
+						variants={titleVariants}
+						initial="hidden"
+						animate={titleInView ? "show" : "hidden"}
+					/>
 				</div>
-				<p>
-					Inclusion Afrika is a non-profit organization that believes in the
-					"power of one." We believe "one donor" and "one African" recipient can
-					be a catalyst for good in our world. The donor's expression of love
-					unleashes potential and results in meaningful change in Africa.
-				</p>
+				<motion.p
+					variants={titleVariants}
+					initial="hidden"
+					animate={titleInView ? "show" : "hidden"}
+				>
+					Inclusion Afrika is a non-profit organization...
+				</motion.p>
 			</div>
-			<div className="intro d-flex">
+
+			<div className="intro d-flex" ref={missionRef}>
 				<div className="mission d-flex">
-					<div className="img d-flex">
+					<motion.div
+						variants={imgVariants}
+						initial="hidden"
+						animate={missionInView ? "show" : "hidden"}
+						className="img d-flex"
+					>
 						<div>
 							<LazyLoadImage
 								src="https://inclusionafrika.imgix.net/transaction.jpg"
@@ -27,45 +102,62 @@ const WhoWeAreSection = () => {
 								className="img-fluid"
 							/>
 						</div>
-					</div>
+					</motion.div>
 					<div className="vertical-line"></div>
-					<div className="description text-justify d-flex">
+					<motion.div
+						variants={textVariants}
+						initial="hidden"
+						animate={missionInView ? "show" : "hidden"}
+						className="description text-justify d-flex"
+					>
 						<div className="d-flex justify-content-center align-items-center gap-4">
-							<img
+							<motion.img
 								src="https://inclusionafrika.imgix.net/target.png"
 								alt="Target Graphic"
 								className="icons"
+								variants={imgVariants}
 							/>
-							<h3>Our Mission</h3>
+							<motion.h3 variants={textVariants}>Our Mission</motion.h3>
 						</div>
-
-						<p>
+						<motion.p variants={textVariants}>
 							Our mission is to facilitate inclusion and self-reliance,
 							empowering individuals to thrive. Through sustainable programs, we
 							break down barriers, promote diversity, and create opportunities
 							that enable young adults to progress.
-						</p>
-					</div>
+						</motion.p>
+					</motion.div>
 				</div>
-				<div className="vision d-flex">
-					<div className="description text-justify d-flex">
+
+				<div className="vision d-flex" ref={visionRef}>
+					<motion.div
+						variants={textVariants}
+						initial="hidden"
+						animate={visionInView ? "show" : "hidden"}
+						className="description text-justify d-flex"
+					>
 						<div className="d-flex justify-content-center align-items-center gap-4">
-							<img
+							<motion.img
 								src="https://inclusionafrika.imgix.net/opportunity.png"
 								alt="Target Graphic"
 								className="icons"
+								variants={imgVariants}
 							/>
-							<h3>Our Vision</h3>
+							<motion.h3 variants={textVariants}>Our Vision</motion.h3>
 						</div>
-						<p>
+						<motion.p variants={textVariants}>
 							Our vision is to transform lives by providing micro-loans and
 							sponsoring educational activities. By blending financial support
 							with educational opportunities, we pave the way for a brighter
 							future in young adults.
-						</p>
-					</div>
+						</motion.p>
+					</motion.div>
 					<div className="vertical-line"></div>
-					<div className="img d-flex">
+					<motion.div
+						variants={imgVariants}
+						initial="hidden"
+						animate={visionInView ? "show" : "hidden"}
+						className="img d-flex"
+					>
 						<div>
 							<LazyLoadImage
 								src="https://inclusionafrika.imgix.net/vision.jpg"
@@ -74,7 +166,7 @@ const WhoWeAreSection = () => {
 								className="img-fluid"
 							/>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>
