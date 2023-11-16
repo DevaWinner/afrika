@@ -1,20 +1,25 @@
+// Import necessary libraries and components...
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../styles/WhoWeAreSection.css";
 
 const WhoWeAreSection = () => {
-	const { ref: titleRef, inView: titleInView } = useInView({
+	const { ref: parentRef, inView: parentInView } = useInView({
 		triggerOnce: false,
 	});
 
-	const { ref: missionRef, inView: missionInView } = useInView({
-		triggerOnce: false,
-	});
-
-	const { ref: visionRef, inView: visionInView } = useInView({
-		triggerOnce: false,
-	});
+	const parentVariants = {
+		hidden: { opacity: 0, y: 100 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+				staggerChildren: 0.5,
+			},
+		},
+	};
 
 	const titleVariants = {
 		hidden: { opacity: 0, y: 50 },
@@ -23,17 +28,7 @@ const WhoWeAreSection = () => {
 			y: 0,
 			transition: {
 				duration: 1.5,
-			},
-		},
-	};
-
-	const sectionVariants = {
-		hidden: { opacity: 0, y: 100 },
-		show: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 1.5,
+				ease: "easeInOut",
 			},
 		},
 	};
@@ -45,6 +40,7 @@ const WhoWeAreSection = () => {
 			x: 0,
 			transition: {
 				duration: 1.5,
+				ease: "easeInOut",
 			},
 		},
 	};
@@ -56,40 +52,60 @@ const WhoWeAreSection = () => {
 			scale: 1,
 			transition: {
 				duration: 1.5,
+				ease: "easeInOut",
 			},
 		},
 	};
 
+	const parallaxOffset = 50;
+
+	const parallaxVariants = {
+		hidden: { y: -parallaxOffset, opacity: 0 },
+		show: {
+			y: 0,
+			opacity: 1,
+			transition: {
+				duration: 1.5,
+				ease: "easeInOut",
+			},
+		},
+	};
+
+	const { ref: missionRef, inView: missionInView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: visionRef, inView: visionInView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<section className="who-we-are container">
-			<div className="text d-flex" ref={titleRef}>
+		<motion.section
+			className="who-we-are container"
+			variants={parentVariants}
+			initial="hidden"
+			animate={parentInView ? "show" : "hidden"}
+			ref={parentRef}
+		>
+			<div className="text d-flex">
 				<div className="title d-flex">
-					<motion.h2
-						variants={titleVariants}
-						initial="hidden"
-						animate={titleInView ? "show" : "hidden"}
-					>
+					<motion.h2 variants={titleVariants} initial="hidden" animate="show">
 						Who we are
 					</motion.h2>
-					<motion.hr
-						variants={titleVariants}
-						initial="hidden"
-						animate={titleInView ? "show" : "hidden"}
-					/>
+					<motion.hr variants={titleVariants} initial="hidden" animate="show" />
 				</div>
-				<motion.p
-					variants={titleVariants}
-					initial="hidden"
-					animate={titleInView ? "show" : "hidden"}
-				>
-					Inclusion Afrika is a non-profit organization...
+				<motion.p variants={titleVariants} initial="hidden" animate="show">
+					Inclusion Afrika is a non-profit organization that believes in the
+					"power of one." We believe "one donor" and "one African" recipient can
+					be a catalyst for good in our world. The donor's expression of love
+					unleashes potential and results in meaningful change in Africa.
 				</motion.p>
 			</div>
 
-			<div className="intro d-flex" ref={missionRef}>
-				<div className="mission d-flex">
+			<div className="intro d-flex">
+				<div className="mission d-flex" ref={missionRef}>
 					<motion.div
-						variants={imgVariants}
+						variants={parallaxVariants}
 						initial="hidden"
 						animate={missionInView ? "show" : "hidden"}
 						className="img d-flex"
@@ -153,7 +169,7 @@ const WhoWeAreSection = () => {
 					</motion.div>
 					<div className="vertical-line"></div>
 					<motion.div
-						variants={imgVariants}
+						variants={parallaxVariants}
 						initial="hidden"
 						animate={visionInView ? "show" : "hidden"}
 						className="img d-flex"
@@ -169,7 +185,7 @@ const WhoWeAreSection = () => {
 					</motion.div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 
