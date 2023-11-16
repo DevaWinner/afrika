@@ -51,6 +51,9 @@ const NavBar = () => {
 								/>
 							</NavLink>
 						</Navbar.Brand>
+						<div className="donate mobile">
+							<DonateButton />
+						</div>
 						<Navbar.Toggle
 							aria-controls={`offcanvasNavbar-expand-${expand}`}
 							className="shadow-none border-0"

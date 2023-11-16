@@ -13,7 +13,7 @@ div.donate-row {
 }
 
 div.image {
-	background-image: url("/public/assets/seller.jpg");
+	background-image: url("https://inclusionafrika.imgix.net/seller.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

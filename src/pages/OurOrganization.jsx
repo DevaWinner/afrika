@@ -5,6 +5,7 @@ import AboutStory from "../components/ AboutStory";
 import PartnerSection from "../components/PartnerSection";
 import QuoteComponent from "../components/QuoteComponent";
 import CtaBox from "../components/CtaBox";
+import { motion } from "framer-motion";
 
 function About() {
 	const quote = {
@@ -15,13 +16,19 @@ function About() {
 	};
 	return (
 		<>
-			<Navbar />
-			<AboutHero />
-			<ImpactContainer />
-			<AboutStory />
-			<PartnerSection />
-			<QuoteComponent {...quote} />
-			<CtaBox />
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 2 }}
+			>
+				<Navbar />
+				<AboutHero />
+				<ImpactContainer />
+				<AboutStory />
+				<PartnerSection />
+				<QuoteComponent {...quote} />
+				<CtaBox />
+			</motion.div>
 		</>
 	);
 }

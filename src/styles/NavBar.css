@@ -13,6 +13,10 @@
 	height: auto;
 }
 
+div.donate.mobile {
+	display: none;
+}
+
 .donate button {
 	background-color: #009933;
 	border: none;
@@ -73,30 +77,34 @@ div.dropdown-menu a:hover {
 }
 
 @media (max-width: 992px) {
+	div.donate.mobile {
+		display: flex;
+	}
+
 	.header {
-		height: 70px;
+		height: 80px;
 	}
 
 	.header.scrolled {
-		height: 70px;
+		height: 80px;
 	}
 
 	.logo {
 		width: 200px;
-		margin-bottom: 0.7rem;
+		margin-bottom: 0rem;
 	}
 
 	.mobile {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 6em 0;
+		margin: 50% 0;
 	}
 
 	.mobile a {
 		text-align: center;
-		padding: 0.5em 0;
-		font-size: 1.1rem;
+		padding: 0.7em 0;
+		font-size: 1.2rem;
 		font-weight: 600;
 		color: aliceblue;
 	}
@@ -130,10 +138,7 @@ div.dropdown-menu a:hover {
 	}
 
 	.donate {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 1em;
+		display: none;
 	}
 
 	.donate button {
@@ -157,5 +162,22 @@ div.dropdown-menu a:hover {
 	div.dropdown-menu a:last-child {
 		padding: 0;
 		margin: 0;
+	}
+
+	nav {
+		padding: 0 !important;
+	}
+
+	span.navbar-brand {
+		margin: 0;
+	}
+
+	div.header.container {
+		flex-wrap: nowrap;
+	}
+
+	span.navbar-toggler-icon {
+		width: 35px;
+		height: 35px;
 	}
 }

@@ -41,7 +41,8 @@ const DonateButton = () => {
 				</Modal.Header>
 				<Modal.Body>
 					<Row className="donate-row">
-						<Col md={6} className="text-center mb-3 mb-md-0 image"></Col>
+						<Col md={6} className="text-center mb-3 mb-md-0 image">
+            </Col>
 
 						{/* Instructions */}
 						<Col md={6} className="donate-instruction">
