@@ -1,11 +1,17 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flagsData from "../data/FlagsData.json";
+import { motion } from "framer-motion";
 import "../styles/Reach.css";
 
 const Reach = () => {
 	return (
-		<Container className="operations d-flex align-items-center flex-column">
+		<motion.div
+			className="operations d-flex align-items-center flex-column"
+			initial={{ opacity: 0, y: 100 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 1, delay: 1.5 }}
+		>
 			<h3 className="text">Our Footprint</h3>
 			<Row className="countries">
 				{flagsData.map((flag, index) => (
@@ -22,7 +28,7 @@ const Reach = () => {
 					</Col>
 				))}
 			</Row>
-		</Container>
+		</motion.div>
 	);
 };
 
