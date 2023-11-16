@@ -1,23 +1,115 @@
 import { Container } from "react-bootstrap";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../styles/WhatWeDo.css";
 
 const WhatWeDo = () => {
+	const { ref: parentRef, inView: parentInView } = useInView({
+		triggerOnce: false,
+	});
+
+	const parentVariants = {
+		hidden: { opacity: 0, y: 50 },
+		show: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 1.5,
+			},
+		},
+	};
+
+		const titleVariants = {
+			hidden: { opacity: 0, y: 50 },
+			show: {
+				opacity: 1,
+				y: 0,
+				transition: {
+					duration: 1.5,
+					ease: "easeInOut",
+				},
+			},
+		};
+
+	const textVariants = {
+		hidden: { opacity: 0, x: -50 },
+		show: {
+			opacity: 1,
+			x: 0,
+			transition: {
+				duration: 1.5,
+				ease: "easeInOut",
+			},
+		},
+	};
+
+	const cardVariants = {
+		hidden: { opacity: 0, scale: 0.8 },
+		show: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				duration: 1.5,
+				ease: "easeInOut",
+			},
+		},
+	};
+
+	const stagger = {
+		show: {
+			transition: {
+				staggerChildren: 0.3,
+			},
+		},
+	};
+
+	const { ref: card1Ref, inView: card1InView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: card2Ref, inView: card2InView } = useInView({
+		triggerOnce: false,
+	});
+
+	const { ref: card3Ref, inView: card3InView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<Container className="top">
+		<motion.div
+			className="top container"
+			variants={parentVariants}
+			initial="hidden"
+			animate={parentInView ? "show" : "hidden"}
+			ref={parentRef}
+		>
 			<div className="text d-flex">
 				<div className="title d-flex">
-					<h2>Our Approach</h2>
-					<hr />
+					<motion.h2 variants={titleVariants} initial="hidden" animate="show">
+						Our Approach
+					</motion.h2>
+					<motion.hr variants={titleVariants} initial="hidden" animate="show" />
 				</div>
-				<p>
+				<motion.p variants={textVariants} initial="hidden" animate="show">
 					We provide hope to the "forgotten" and acceptance to those who "have
 					not"
-				</p>
+				</motion.p>
 			</div>
 
-			<div className="card-group d-flex container">
-				<div className="card">
+			<motion.div
+				className="card-group d-flex container"
+				variants={stagger}
+				initial="hidden"
+				animate="show"
+			>
+				<motion.div
+					className="card"
+					variants={cardVariants}
+					initial="hidden"
+					animate={card1InView ? "show" : "hidden"}
+					ref={card1Ref}
+				>
 					<LazyLoadImage
 						src="https://inclusionafrika.imgix.net/seller.jpg"
 						effect="blur"
@@ -33,8 +125,14 @@ const WhatWeDo = () => {
 							loans support a wide range of ventures.
 						</p>
 					</div>
-				</div>
-				<div className="card">
+				</motion.div>
+				<motion.div
+					className="card"
+					variants={cardVariants}
+					initial="hidden"
+					animate={card2InView ? "show" : "hidden"}
+					ref={card2Ref}
+				>
 					<LazyLoadImage
 						src="https://inclusionafrika.imgix.net/students.jpg"
 						effect="blur"
@@ -50,8 +148,14 @@ const WhatWeDo = () => {
 							opportunities in the digital age.
 						</p>
 					</div>
-				</div>
-				<div className="card">
+				</motion.div>
+				<motion.div
+					className="card"
+					variants={cardVariants}
+					initial="hidden"
+					animate={card3InView ? "show" : "hidden"}
+					ref={card3Ref}
+				>
 					<LazyLoadImage
 						src="https://inclusionafrika.imgix.net/hand-shake.jpg"
 						effect="blur"
@@ -66,9 +170,9 @@ const WhatWeDo = () => {
 							the success of their ventures.
 						</p>
 					</div>
-				</div>
-			</div>
-		</Container>
+				</motion.div>
+			</motion.div>
+		</motion.div>
 	);
 };
 
