@@ -58,8 +58,8 @@ const ContactForm = () => {
 
 	return (
 		<>
-			<section className="contact-container top container ">
-				<Container>
+			<section className="contact-container container">
+				<Container className="top">
 					<Row className="contact">
 						<Col md={6} className="form flex column">
 							<div className="text d-flex">

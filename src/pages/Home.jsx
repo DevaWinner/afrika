@@ -4,7 +4,7 @@ import Reach from "../components/Reach";
 import WhoWeAreSection from "../components/WhoWeAreSection";
 import WhatWeDo from "../components/WhatWeDo";
 import CtaBox from "../components/CtaBox";
-import ContactForm from "../components/ContactForm2";
+import ContactForm from "../components/ContactForm";
 import PartnerSection from "../components/PartnerSection";
 import "../styles/Home.css";
 import { motion } from "framer-motion";
