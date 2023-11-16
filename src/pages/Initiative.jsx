@@ -1,6 +1,7 @@
 import ProgramAreas from "../components/ProgramAreas";
 import Navbar from "../components/NavBar";
 import CtaBox from "../components/CtaBox";
+import ImageGrid from "../components/ImageGrid";
 import Testimonial from "../components/Testimonial";
 import { motion } from "framer-motion";
 
@@ -40,6 +41,7 @@ function Initiative() {
 				</section>
 				<ProgramAreas />
 				<CtaBox />
+				<ImageGrid />
 				<Testimonial />
 			</motion.div>
 		</>

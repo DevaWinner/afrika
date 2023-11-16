@@ -41,7 +41,7 @@ const Testimonial = () => {
 				<motion.p
 					initial={{ opacity: 0, x: 50 }}
 					animate={
-						testimonialInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }
+						testimonialInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 10 }
 					}
 					transition={{ duration: 0.8 }}
 				>
