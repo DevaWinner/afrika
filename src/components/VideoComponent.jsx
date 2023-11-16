@@ -22,7 +22,7 @@ const VideoComponent = () => {
 	});
 
 	return (
-		<Container ref={videoRef} className="top">
+		<Container ref={videoRef} className="mt-3">
 			<Row>
 				<Col md={{ span: 8, offset: 2 }}>
 					<motion.div
