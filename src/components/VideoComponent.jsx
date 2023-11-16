@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import YouTube from "react-youtube";
 import "../styles/VideoComponent.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const VideoComponent = () => {
 	const videoId = "kgIjscaMoMg";
@@ -15,13 +17,24 @@ const VideoComponent = () => {
 		},
 	};
 
+	const { ref: videoRef, inView: videoInView } = useInView({
+		triggerOnce: false,
+	});
+
 	return (
-		<Container>
+		<Container ref={videoRef} className="top">
 			<Row>
 				<Col md={{ span: 8, offset: 2 }}>
-					<div className="video-container">
+					<motion.div
+						className="video-container"
+						initial={{ opacity: 0, y: 100 }}
+						animate={
+							videoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }
+						}
+						transition={{ duration: 0.8 }}
+					>
 						<YouTube videoId={videoId} opts={opts} />
-					</div>
+					</motion.div>
 				</Col>
 			</Row>
 		</Container>
