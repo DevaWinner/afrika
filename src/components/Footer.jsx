@@ -57,11 +57,9 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="developer">
-				<p>
-					Copyright
-					<script>document.write(new Date().getFullYear());</script>© Inclusion
-					Afrika. All rights reserved. <br className="developer-br" /> Designed
-					and developed with
+				<p className="copyright">
+					Copyright © {new Date().getFullYear()} Inclusion Afrika. All rights
+					reserved. <br className="developer-br" /> Designed and developed with
 					<i className="fa fa-heart developer-heart"></i> by
 					<a
 						href="https://www.linkedin.com/in/winnera/"

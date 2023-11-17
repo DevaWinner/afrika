@@ -168,6 +168,10 @@
 		font-size: 0.9rem;
 	}
 
+  p.copyright {
+    font-size: 0.8rem !important; 
+  }
+
 	.developer {
 		font-size: 0.7rem;
 		text-align: center;
