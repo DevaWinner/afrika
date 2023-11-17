@@ -24,7 +24,7 @@ const QuoteComponent = ({ imageUrl, quoteText, author }) => {
 	};
 
 	const quoteVariants = {
-		hidden: { opacity: 0, x: 50 },
+		hidden: { opacity: 0, x: 10 },
 		show: {
 			opacity: 1,
 			x: 0,

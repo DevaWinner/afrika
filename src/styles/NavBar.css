@@ -35,6 +35,25 @@ div.donate.mobile {
 	gap: 1rem;
 }
 
+div.mobile-screen {
+	display: none;
+}
+
+div.mobile-screen button {
+	background-color: var(--button-color);
+	padding: 0.4em 0.6em;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--light-color);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+div.mobile-screen button:hover {
+	background-color: #014518;
+}
+
 .mobile a {
 	font-size: 1rem;
 	color: var(--primary-color);
@@ -77,21 +96,22 @@ div.dropdown-menu a:hover {
 }
 
 @media (max-width: 992px) {
-	div.donate.mobile {
+	div.mobile-screen {
 		display: flex;
 	}
 
 	.header {
-		height: 80px;
+		height: 70px;
 	}
 
 	.header.scrolled {
-		height: 80px;
+		height: 70px;
 	}
 
 	.logo {
-		width: 200px;
+		width: 190px;
 		margin-bottom: 0rem;
+    margin-right: 0.6rem !important;
 	}
 
 	.mobile {

@@ -51,7 +51,7 @@ const NavBar = () => {
 								/>
 							</NavLink>
 						</Navbar.Brand>
-						<div className="donate mobile">
+              <div className="mobile-screen">
 							<DonateButton />
 						</div>
 						<Navbar.Toggle

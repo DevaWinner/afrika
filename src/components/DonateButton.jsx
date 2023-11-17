@@ -1,4 +1,3 @@
-// DonateButton.js
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
@@ -44,7 +43,6 @@ const DonateButton = () => {
 						<Col md={6} className="text-center mb-3 mb-md-0 image">
             </Col>
 
-						{/* Instructions */}
 						<Col md={6} className="donate-instruction">
 							<p>
 								We partner with the non-profit organization, Skep Foundation to
