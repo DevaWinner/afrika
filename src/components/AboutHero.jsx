@@ -35,7 +35,7 @@ const AboutHero = () => {
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 1, delay: 1.5 }}
 				>
-					<blockquote className="mb-2">
+					<blockquote className="mb-2 top">
 						“Inclusion is the act of including someone or something as part of a
 						group...”
 					</blockquote>
