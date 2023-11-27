@@ -33,9 +33,7 @@ function Initiative() {
 					>
 						<div className="title d-flex"></div>
 						<p className="fs-5">
-							Our initiatives make differences in the lives of African youth. We
-							have crafted a diverse range of programs that address these
-							challenges.
+							Our initiatives make differences in the lives of African youth. We have over a diverse range of solutions to African challenges.
 						</p>
 					</motion.div>
 				</section>
