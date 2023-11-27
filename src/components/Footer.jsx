@@ -11,7 +11,7 @@ const Footer = () => {
 					<ul className="d-flex flex-column">
 						<li>
 							<i className="fa-solid fa-map-location"></i>
-							<p>We are available in Accra, Ghana and Utah, USA</p>
+							<p></p>
 						</li>
 						<li>
 							<i className="fa-solid fa-phone"></i>
