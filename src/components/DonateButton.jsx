@@ -40,14 +40,13 @@ const DonateButton = () => {
 				</Modal.Header>
 				<Modal.Body>
 					<Row className="donate-row">
-						<Col md={6} className="text-center mb-3 mb-md-0 image">
-            </Col>
+						<Col md={6} className="text-center mb-3 mb-md-0 image"></Col>
 
 						<Col md={6} className="donate-instruction">
 							<p>
-								We partner with the non-profit organization, Skep Foundation to
-								accept donations. Skep Foundation is a national 501(c)(3)
-								organization that provides philanthropic service across Africa.
+								We partner with Skep Foundation to process our donations. Skep
+								Foundation is a 501(c)3 organization that connects African
+								talent to careers.
 							</p>
 
 							<p>
