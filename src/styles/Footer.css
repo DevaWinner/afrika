@@ -139,12 +139,12 @@
 	}
 
 	.inclusion {
-		font-size: 1.4rem !important;
+		font-size: 1.2rem !important;
 		font-weight: 700;
 	}
   
 	.footer-contact ul li i {
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 
 	.socials ul {
@@ -169,7 +169,7 @@
 	}
 
   p.copyright {
-    font-size: 0.8rem !important; 
+    font-size: 0.7rem !important; 
   }
 
 	.developer {

@@ -69,7 +69,7 @@ const DonateButton = () => {
 				</Modal.Body>
 				<ModalFooter>
 					<p className="tax-info">
-						* <small>All your donations are tax deductible</small>
+						* <small>All your donations may be tax deductible</small>
 					</p>
 				</ModalFooter>
 			</Modal>

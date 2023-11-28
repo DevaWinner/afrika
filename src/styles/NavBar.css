@@ -109,7 +109,7 @@ div.dropdown-menu a:hover {
 	}
 
 	.logo {
-		width: 190px;
+		width: 180px;
 		margin-bottom: 0rem;
     margin-right: 0.6rem !important;
 	}
@@ -124,7 +124,7 @@ div.dropdown-menu a:hover {
 	.mobile a {
 		text-align: center;
 		padding: 0.7em 0;
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		font-weight: 600;
 		color: aliceblue;
 	}
@@ -166,7 +166,7 @@ div.dropdown-menu a:hover {
 		background-color: #10c04b;
 		border: none;
 		font-weight: 600;
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 	}
 
 	.dropdown-item.active {
@@ -197,7 +197,7 @@ div.dropdown-menu a:hover {
 	}
 
 	span.navbar-toggler-icon {
-		width: 35px;
+		width: 32px;
 		height: 35px;
 	}
 }

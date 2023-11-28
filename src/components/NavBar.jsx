@@ -64,8 +64,9 @@ const NavBar = () => {
 							placement="end"
 							style={{
 								backgroundColor: "var(--primary-color)",
+                top: "70px",
 								width: "80%",
-								height: "90%",
+								height: "80%",
 								backdropFilter: "blur(20px)",
 								color: "yellow",
 								borderRadius: "0 0 0 20px",

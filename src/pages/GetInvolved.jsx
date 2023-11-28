@@ -41,7 +41,6 @@ function GetInvolved() {
 				<WhyHelpSection />
 				<CtaBox />
 				<OtherWaysToSupport />
-				<Testimonial />
 			</motion.div>
 		</>
 	);
