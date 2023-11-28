@@ -39,7 +39,7 @@ const AboutHero = () => {
 						“Inclusion is the act of including someone or something as part of a
 						group...”
 					</blockquote>
-					<p>-Cambridge Dictionary definition of “inclusion”</p>
+					<p>-Cambridge Dictionary</p>
 				</motion.div>
 			</Container>
 		</>
