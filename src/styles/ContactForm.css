@@ -78,8 +78,8 @@ div.address p {
 }
 
 .address-items li p a {
-  color: var(--light-color);
-  text-decoration: none;
+	color: var(--light-color);
+	text-decoration: none;
 }
 
 .address-items li i {
@@ -88,11 +88,11 @@ div.address p {
 
 div.text-container {
 	background-color: var(--primary-color);
-  color: var(--light-color);
+	color: var(--light-color);
 }
 
 button.button {
-  padding: 0.7rem 1rem;
+	padding: 0.7rem 1rem;
 }
 
 @media (max-width: 480px) {
