@@ -101,11 +101,12 @@ div.dropdown-menu a:hover {
 	}
 
 	.header {
-		height: 70px;
+		height: 65px;
+    /* color: antiquewhite; */
 	}
 
 	.header.scrolled {
-		height: 70px;
+		height: 65px;
 	}
 
 	.logo {

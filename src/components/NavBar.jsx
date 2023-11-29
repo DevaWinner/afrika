@@ -51,7 +51,7 @@ const NavBar = () => {
 								/>
 							</NavLink>
 						</Navbar.Brand>
-              <div className="mobile-screen">
+						<div className="mobile-screen">
 							<DonateButton />
 						</div>
 						<Navbar.Toggle
@@ -64,11 +64,11 @@ const NavBar = () => {
 							placement="end"
 							style={{
 								backgroundColor: "var(--primary-color)",
-                top: "70px",
+								top: "65px",
 								width: "80%",
 								height: "80%",
 								backdropFilter: "blur(20px)",
-								color: "yellow",
+								color: "antiquewhite",
 								borderRadius: "0 0 0 20px",
 								border: "none",
 							}}
