@@ -61,6 +61,8 @@
 	.operations {
 		width: 100% !important;
 		margin: -30px auto;
+		padding: 0.8em 0;
+		gap: 0em;
 	}
 
 	.operations .text {
@@ -70,21 +72,21 @@
 	}
 
 	.countries {
-		gap: 0em;
+		gap: 0.9em 0;
 		width: 100%;
 	}
 
 	.country {
 		gap: 0.3em;
-		margin-bottom: 1rem;
+		/* margin-bottom: 0.9rem; */
 	}
 
 	.country img {
-		width: 50px;
+		width: 45px;
 	}
 
 	.country p {
 		font-size: 0.8rem !important;
-		font-weight: 600;
+		font-weight: 500;
 	}
 }

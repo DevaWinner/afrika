@@ -17,8 +17,8 @@ div.image {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100;
-	width: 50;
+	height: 380px;
+	width: 100;
 }
 
 div.donate-instruction {
@@ -26,19 +26,21 @@ div.donate-instruction {
 }
 
 div.donate-instruction p:nth-child(1) {
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 	font-weight: 400;
 	text-align: justify;
 	line-height: 1.5;
-	padding: 0.5rem;
+	padding: 1rem;
 }
 
 div.donate-instruction p:nth-child(2) {
-	font-size: 0.8rem;
+	font-size: 1.1rem;
 	font-weight: 500;
 	text-align: justify;
 	line-height: 1.5;
+	padding: 1rem;
 	color: var(--secondary-color);
+  margin-bottom: 0;
 }
 
 div.modal-footer {
@@ -48,8 +50,20 @@ div.modal-footer {
 }
 
 .tax-info {
-	font-size: 0.9rem;
+	font-size: 1rem;
+	font-weight: 500;
 }
+
+a.donate-link-button {
+	text-decoration: none;
+	color: var(--primary-color);
+	padding: 0.5rem 1rem;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
 @media (max-width: 480px) {
 	div.modal-header {
 		padding: 0.6rem;
@@ -62,10 +76,22 @@ div.modal-footer {
 
 	div.donate-instruction {
 		padding: 0rem 0.5rem;
+    gap: 0rem;
 	}
 
 	div.donate-instruction p:nth-child(1) {
 		font-size: 0.8rem;
 		padding: 0.5rem 0.2rem;
+	}
+
+	div.donate-instruction p:nth-child(2) {
+		font-size: 0.8rem;
+		padding: 0.5rem 0.2rem;
+    margin-bottom: 0;
+	}
+
+	a.donate-link-button {
+		margin-bottom: 1rem;
+    padding: 0.4rem 0.6rem;
 	}
 }
