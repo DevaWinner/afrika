@@ -77,6 +77,11 @@ div.address p {
 	font-size: 0.8rem;
 }
 
+.address-items li p a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+
 .address-items li i {
 	font-size: 1.2rem;
 }

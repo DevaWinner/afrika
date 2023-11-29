@@ -182,7 +182,11 @@ const ContactForm = () => {
 								</li>
 								<li>
 									<i className="fa-solid fa-envelope"></i>
-									<p>info@inclusionafrika.org</p>
+									<p>
+										<a href="mailto:info@inclusionafrika.org">
+											info@inclusionafrika.org
+										</a>
+									</p>
 								</li>
 							</ul>
 						</Col>
