@@ -42,7 +42,7 @@ const DonateButton = () => {
 					<Row className="donate-row">
 						<Col md={6} className="text-center mb-3 mb-md-0 image"></Col>
 
-						<Col md={6} className="donate-instruction">
+						<Col md={6} className="donate-instruction d-flex flex-column justify-content-center align-items-center ">
 							<p>
 								We partner with Skep Foundation to process our donations. Skep
 								Foundation is a 501(c)3 organization that connects African
@@ -50,20 +50,17 @@ const DonateButton = () => {
 							</p>
 
 							<p>
-								* Please indicate that the donation is for{" "}
-								<strong>Inclusion Afrika</strong> in the note.
+								To make a donation to our cause please. 
 							</p>
-							<p>
-								Click{" "}
-								<a
-									href="https://www.zeffy.com/en-US/donation-form/e930534d-e885-4508-8723-21b86797617c"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									here
-								</a>{" "}
-								to donate now.
-							</p>
+
+							<a
+								href="https://www.zeffy.com/en-US/donation-form/10a7300e-8c6a-4af3-a738-79517cc3b372"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="donate-link-button"
+							>
+								Click Here
+							</a>
 						</Col>
 					</Row>
 				</Modal.Body>
