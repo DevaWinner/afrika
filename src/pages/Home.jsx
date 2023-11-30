@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Navbar from "../components/NavBar";
 import HeroCarousel from "../components/Carousel";
 import Reach from "../components/Reach";
@@ -10,6 +11,9 @@ import "../styles/Home.css";
 import { motion } from "framer-motion";
 
 function Home() {
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<motion.div
