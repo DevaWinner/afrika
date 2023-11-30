@@ -1,5 +1,4 @@
-// OurTeam.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/NavBar";
 import ProfileSection from "../components/ProfileSection";
 import boardMembersData from "../data/boardMembersData.json";
@@ -10,6 +9,10 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const OurTeam = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
 	const { ref: headerRef, inView: headerInView } = useInView({
 		triggerOnce: true,
 	});
