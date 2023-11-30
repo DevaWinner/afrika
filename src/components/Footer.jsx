@@ -10,10 +10,6 @@ const Footer = () => {
 					<h3 className="footer-heading">Contact Info</h3>
 					<ul className="d-flex flex-column">
 						<li>
-							<i className="fa-solid fa-map-location"></i>
-							<p></p>
-						</li>
-						<li>
 							<i className="fa-solid fa-phone"></i>
 							<p>
 								+1 (814) 619-5491 <br /> +233 24 716 8781
