@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Navbar from "../components/NavBar";
 import AboutHero from "../components/AboutHero";
 import ImpactContainer from "../components/ImpactContainer";
@@ -8,6 +9,9 @@ import CtaBox from "../components/CtaBox";
 import { motion } from "framer-motion";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 	const quote = {
 		imageUrl: "https://inclusionafrika.imgix.net/marion.jpg",
 		quoteText:
