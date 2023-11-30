@@ -1,12 +1,15 @@
+import React, { useEffect } from "react";
 import Navbar from "../components/NavBar";
 import WhyHelpSection from "../components/WhyHelpSection";
 import CtaBox from "../components/CtaBox";
-import Testimonial from "../components/Testimonial";
 import OtherWaysToSupport from "../components/OtherWaysToSupport";
 import VideoComponent from "../components/VideoComponent";
 import { motion } from "framer-motion";
 
 function GetInvolved() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<motion.div
