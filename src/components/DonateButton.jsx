@@ -50,7 +50,7 @@ const DonateButton = () => {
 							</p>
 
 							<p>
-								To make a donation to our cause please. 
+								To make a donation to our cause 
 							</p>
 
 							<a
