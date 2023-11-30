@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import ProgramAreas from "../components/ProgramAreas";
 import Navbar from "../components/NavBar";
 import CtaBox from "../components/CtaBox";
@@ -6,6 +7,9 @@ import Testimonial from "../components/Testimonial";
 import { motion } from "framer-motion";
 
 function Initiative() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 	return (
 		<>
 			<motion.div
