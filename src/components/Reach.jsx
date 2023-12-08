@@ -14,7 +14,7 @@ const Reach = () => {
 			transition={{ duration: 1, delay: 1.5 }}
 		>
 			<h3 className="text">Our Footprint</h3>
-			<Marquee className="countries">
+			<Marquee className="countries" pauseOnHover={true}>
 				{flagsData.map((flag, index) => (
 					<Col key={index} xl={2} md={1} xs={4} className="d-flex flex-row">
 						<div className="country d-flex align-items-center flex-column justify-content-center ">
