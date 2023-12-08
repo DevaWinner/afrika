@@ -22,12 +22,18 @@
 
 .country {
 	gap: 0.7em;
+	margin: 0 2.5em;
 }
 
 .country p {
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 600;
 	margin-bottom: 0;
+}
+
+.footprint-image {
+	width: 100px;
+  height: 70px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -67,8 +73,9 @@
 
 	.operations .text {
 		font-size: 1rem;
-		font-weight: 700;
+		font-weight: 600;
 		text-align: center;
+    margin-bottom: 0.5em;
 	}
 
 	.countries {
@@ -77,16 +84,16 @@
 	}
 
 	.country {
-		gap: 0.3em;
-		/* margin-bottom: 0.9rem; */
-	}
-
-	.country img {
-		width: 45px;
+		gap: 0;
+		margin: 0 1.4em;
 	}
 
 	.country p {
 		font-size: 0.8rem !important;
-		font-weight: 500;
+		font-weight: 600;
+	}
+
+	.footprint-image {
+		width: 60px;
 	}
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import Marquee from "react-fast-marquee";
+import { Col } from "react-bootstrap";
 import flagsData from "../data/FlagsData.json";
 import { motion } from "framer-motion";
 import "../styles/Reach.css";
@@ -13,21 +14,20 @@ const Reach = () => {
 			transition={{ duration: 1, delay: 1.5 }}
 		>
 			<h3 className="text">Our Footprint</h3>
-			<Row className="countries">
+			<Marquee className="countries">
 				{flagsData.map((flag, index) => (
-					<Col key={index} xl={2} md={1} xs={4}>
-						<div className="country d-flex align-items-center flex-column justify-content-center">
+					<Col key={index} xl={2} md={1} xs={4} className="d-flex flex-row">
+						<div className="country d-flex align-items-center flex-column justify-content-center ">
 							<img
 								src={flag.flagPath}
 								alt={`${flag.country} Flag`}
-								className="img-fluid"
-								style={{ maxWidth: "60%", height: "auto" }}
+								className="footprint-image"
 							/>
-							<p className="text-truncate">{flag.country}</p>
+							<p className="text-truncate justify-self-end">{flag.country}</p>
 						</div>
 					</Col>
 				))}
-			</Row>
+			</Marquee>
 		</motion.div>
 	);
 };
