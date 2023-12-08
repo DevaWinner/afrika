@@ -8,19 +8,23 @@
 		"flagPath": "https://inclusionafrika.imgix.net/flags/nigeria.svg"
 	},
 	{
-		"country": "Liberia",
-		"flagPath": "https://inclusionafrika.imgix.net/flags/liberia.svg"
+		"country": "Kenya",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/kenya.svg"
 	},
 	{
 		"country": "Sierra Leone",
 		"flagPath": "https://inclusionafrika.imgix.net/flags/sierra-leone.svg"
 	},
 	{
-		"country": "Togo",
-		"flagPath": "https://inclusionafrika.imgix.net/flags/togo.svg"
+		"country": "Uganda",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/uganda.svg"
 	},
 	{
-		"country": "Cameroon",
-		"flagPath": "https://inclusionafrika.imgix.net/flags/cameroon.svg"
-	}
+		"country": "Zimbabwe",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/zimbabwe.svg"
+	},
+  {
+    "country": "DR Congo",
+    "flagPath": "https://inclusionafrika.imgix.net/flags/dr-congo.svg"
+  }
 ]
