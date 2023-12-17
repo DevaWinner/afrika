@@ -75,25 +75,25 @@
 		font-size: 1rem;
 		font-weight: 600;
 		text-align: center;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
 	}
 
 	.countries {
-		gap: 0.9em 0;
+		gap: 0.6em 0;
 		width: 100%;
 	}
 
 	.country {
 		gap: 0;
-		margin: 0 1.4em;
+		margin: 0 1.1em;
 	}
 
 	.country p {
-		font-size: 0.8rem !important;
+		font-size: 0.7rem !important;
 		font-weight: 600;
 	}
 
 	.footprint-image {
-		width: 60px;
+		width: 55px;
 	}
 }

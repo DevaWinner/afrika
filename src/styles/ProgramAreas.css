@@ -55,4 +55,9 @@ div.program-areas:nth-child(odd) div.program-card {
 	div.program-areas:nth-child(odd) div.program-card {
 		flex-direction: column;
 	}
+
+  .program-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }

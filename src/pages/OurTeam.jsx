@@ -54,22 +54,6 @@ const OurTeam = () => {
 							make a difference in the world.
 						</p>
 					</motion.div>
-					<motion.div
-						className="text d-flex"
-						initial={{ opacity: 0, y: 100 }}
-						animate={textInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-						transition={{ duration: 0.8 }}
-					>
-						{/* ... Additional text or components */}
-					</motion.div>
-					<motion.div
-						className="text d-flex"
-						initial={{ opacity: 0, y: 100 }}
-						animate={textInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
-						transition={{ duration: 0.8 }}
-					>
-						{/* ... Additional text or components */}
-					</motion.div>
 					<div className="text d-flex">
 						<div className="title d-flex">
 							<h2>Founders</h2>

@@ -111,13 +111,19 @@ img.icons:hover {
 		display: none;
 	}
 
+	img.icons {
+		width: 40px;
+		height: auto;
+		transition: transform 0.3s ease-in-out;
+	}
+
 	.description {
 		width: 90%;
 		gap: 1.5rem;
 	}
 
 	.description h3 {
-		font-size: 0.9rem;
+		font-size: 1.1rem !important;
 		font-weight: 600;
 	}
 
@@ -128,9 +134,5 @@ img.icons:hover {
 	.vision {
 		flex-direction: column-reverse;
 		gap: 0.5rem;
-	}
-
-	.intro .vision {
-		margin-top: 2rem;
 	}
 }

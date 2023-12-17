@@ -109,6 +109,7 @@ const WhoWeAreSection = () => {
 						initial="hidden"
 						animate={missionInView ? "show" : "hidden"}
 						className="img d-flex"
+						style={{ maxHeight: "201px" }}
 					>
 						<div>
 							<LazyLoadImage
@@ -173,6 +174,7 @@ const WhoWeAreSection = () => {
 						initial="hidden"
 						animate={visionInView ? "show" : "hidden"}
 						className="img d-flex"
+						style={{ maxHeight: "201px" }}
 					>
 						<div>
 							<LazyLoadImage

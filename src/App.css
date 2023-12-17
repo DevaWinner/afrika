@@ -59,7 +59,7 @@
 
 @media (max-width: 480px) {
 	.title h2 {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	.text p {
@@ -87,6 +87,6 @@
 	}
 
 	p {
-		font-size: 0.85rem !important;
+		font-size: 0.95rem !important;
 	}
 }
