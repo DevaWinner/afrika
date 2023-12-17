@@ -15,7 +15,7 @@ const ProgramCard = ({ title, imgSrc, description }) => {
 	});
 
 	return (
-		<Col md={12} className="program-areas">
+		<Col md={12} className="program-areas px-4">
 			<Row className="program-card d-flex align-items-center justify-content-center gap-4">
 				<Col xs={12} md={6} className="program-card-img" ref={imgRef}>
 					<motion.div
@@ -39,7 +39,7 @@ const ProgramCard = ({ title, imgSrc, description }) => {
 				>
 					<div className="title d-flex">
 						<motion.h3
-							className="fs-5 fw-bold"
+							className="program-title"
 							initial={{ opacity: 0, y: 100 }}
 							animate={
 								textInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }
@@ -51,7 +51,7 @@ const ProgramCard = ({ title, imgSrc, description }) => {
 						<hr />
 					</div>
 					<motion.p
-						className="fs-6 text-justify"
+						className="text-justify"
 						initial={{ opacity: 0, y: 100 }}
 						animate={textInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
 						transition={{ duration: 0.8, delay: 0.4 }}
