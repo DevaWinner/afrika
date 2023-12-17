@@ -1,4 +1,3 @@
-// ImageGrid.jsx
 import React from "react";
 import PhotoAlbum from "react-photo-album";
 import { Container } from "react-bootstrap";
@@ -12,7 +11,7 @@ const photos = [
 		height: 4000,
 	},
 	{
-		src: "https://inclusionafrika.imgix.net/photo/7.jpg",
+		src: "https://inclusionafrika.imgix.net/photo/12.jpg",
 		width: 6000,
 		height: 4000,
 	},
@@ -37,7 +36,7 @@ const photos = [
 		height: 4000,
 	},
 	{
-		src: "https://inclusionafrika.imgix.net/photo/9.jpg",
+		src: "https://inclusionafrika.imgix.net/photo/13.jpeg",
 		width: 3120,
 		height: 4160,
 	},
