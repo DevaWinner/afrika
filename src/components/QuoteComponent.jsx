@@ -42,7 +42,7 @@ const QuoteComponent = ({ imageUrl, quoteText, author }) => {
 	));
 
 	return (
-		<Container className="top">
+		<Container className="top px-4">
 			<Row className="justify-content-md-center">
 				<Col
 					md={4}
@@ -70,7 +70,7 @@ const QuoteComponent = ({ imageUrl, quoteText, author }) => {
 						initial="hidden"
 						animate={quoteInView ? "show" : "hidden"}
 					>
-						<p className="mb-0 fs-6 text-justify">{formattedQuote}</p>
+						<p className="mb-0 text-justify">{formattedQuote}</p>
 						<footer className="blockquote-footer mt-3">{author}</footer>
 					</motion.blockquote>
 				</Col>
