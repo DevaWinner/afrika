@@ -7,4 +7,4 @@ deployment:
     - echo 'Building the React project...'
     - npm run build
     - echo 'Deploying to public_html...'
-    - rsync -av --delete build/ $DEPLOY_PATH/
+    - rsync -av --delete build/ $DEPLOYPATH/
