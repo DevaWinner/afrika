@@ -2,9 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/inclus13/public_html
-    - echo 'Installing dependencies...'
-    - npm install
-    - echo 'Building the React project...'
-    - npm run build
-    - echo 'Deploying to public_html...'
-    - rsync -av --delete build/ $DEPLOYPATH/
+    - echo 'Deploying the built React project from dist...'
+    - rsync -av --delete dist/ $DEPLOYPATH/
