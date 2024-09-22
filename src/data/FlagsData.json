@@ -23,8 +23,16 @@
 		"country": "DR Congo",
 		"flagPath": "https://inclusionafrika.imgix.net/flags/cd.svg"
 	},
-  {
-    "country": "Zimbabwe",
-    "flagPath": "https://inclusionafrika.imgix.net/flags/zm.svg"
-  }
+	{
+		"country": "Zimbabwe",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/zw.svg"
+	},
+	{
+		"country": "Zambia",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/zm.svg"
+	},
+	{
+		"country": "Togo",
+		"flagPath": "https://inclusionafrika.imgix.net/flags/tg.svg"
+	}
 ]
