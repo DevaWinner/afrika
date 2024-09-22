@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const VideoComponent = () => {
-	const videoId = "kgIjscaMoMg";
+	const videoId = "JVKucRC0IbA";
 
 	const opts = {
 		playerVars: {
@@ -23,7 +23,7 @@ const VideoComponent = () => {
 
 	return (
 		<Container ref={videoRef} className="mt-3">
-			<Row>
+			<Row className="align-items-center justify-content-center">
 				<Col md={{ span: 8, offset: 2 }}>
 					<motion.div
 						className="video-container"
