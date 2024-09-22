@@ -2,5 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/inclus13/public_html
-    - echo 'Deploying the built React project from dist...'
-    - rsync -av --delete dist/ $DEPLOYPATH/
+    - echo "Deploying the built React project from dist..."
+    - /bin/cp -r dist/* $DEPLOYPATH/
+    - echo "Deployment complete."
