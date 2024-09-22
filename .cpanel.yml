@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/inclus13/public_html
+    - export DEPLOYPATH=/home2/inclus13/public_html
     - echo 'Installing dependencies...'
     - npm install
     - echo 'Building the React project...'
